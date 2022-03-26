@@ -1,0 +1,25 @@
+:root {
+    --active: #ffe600;
+    --white: #ffffff;
+    --dark: #111;
+}
+
+.bg_bright {
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+.bg_dark {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.dark {
+    color: var(--dark);
+    fill: var(--dark);
+}
+
+.white {
+    color: var(--white);
+    fill: var(--white);
+}

@@ -1,0 +1,134 @@
+.logo {
+    min-width: 200px;
+    max-width: 250px;
+    fill: var(--white);
+    transition-duration: .5s;
+}
+
+.logo:hover,
+.logo:focus {
+    opacity: .7;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    display: flex;
+    /* border: 1px solid #ffffff40; */
+    color: var(--white);
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#footer {
+    bottom: 0;
+    padding: 1rem 2rem;
+    left: 0;
+    position: fixed;
+    font-size: .7rem;
+    z-index: 99;
+    text-transform: uppercase;
+    display: flex;
+    gap: 20px;
+}
+
+.menu {
+    white-space: nowrap;
+}
+
+.menu a {
+    text-transform: uppercase;
+    margin: 0rem .7rem;
+    color: inherit;
+    font-size: .9rem;
+    transition: .3s;
+    font-weight: 500;
+}
+
+.active {
+    color: var(--active) !important;
+    fill: var(--active) !important;
+    cursor: default;
+}
+
+.mobilemenuContainer a.active:before,
+.menu a.active:before {
+    content: "■ ";
+}
+
+
+/* MOBILE MENU */
+
+#burger_icon rect {
+    fill: var(--active);
+    transition: .5s;
+}
+
+#burger_icon:hover rect,
+#burger_icon:focus rect,
+#burger_icon:active rect {
+    opacity: .8;
+}
+
+.mobilemenu {
+    background-color: #00000080;
+    position: absolute;
+    right: 0;
+    top: 0vh;
+    display: none;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px 5px #00000044;
+}
+
+.mobilemenu #mobilemenuItems {
+    display: none;
+}
+
+.mobilemenu .mobilemenuItems a {
+    color: var(--white);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    transition: .5s;
+}
+
+.mobilemenu .mobilemenuItems a:hover,
+.mobilemenu .mobilemenuItems a:focus,
+.mobilemenu .mobilemenuItems a:active {
+    color: var(--active);
+}
+
+.mobilemenu .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2rem;
+}
+
+.mobilemenu svg {
+    width: 20px;
+    height: 20px;
+}
+
+.mobilemenuContainer {
+    padding: 80px 40px;
+    height: 100vh;
+    min-width: 250px;
+}
+
+@media screen and (max-width: 940px) {
+    .menu {
+        display: none;
+    }
+    .mobilemenu {
+        display: block;
+    }
+    #footer {
+        display: none;
+    }
+}
