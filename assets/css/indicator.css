@@ -1,8 +1,8 @@
 /* START INDICATOR */
 
-ul {
+#indicator ul {
     list-style-type: none;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .dots-wrapper {
