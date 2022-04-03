@@ -23,18 +23,6 @@
     padding: 2rem;
 }
 
-#footer {
-    bottom: 0;
-    padding: 1rem 2rem;
-    left: 0;
-    position: fixed;
-    font-size: .7rem;
-    z-index: 99;
-    text-transform: uppercase;
-    display: flex;
-    gap: 20px;
-}
-
 .menu {
     white-space: nowrap;
 }
@@ -74,13 +62,13 @@
 }
 
 .mobilemenu {
-    background-color: #00000080;
+    background-color: #ffffffee;
     position: absolute;
     right: 0;
     top: 0vh;
     display: none;
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 10px 5px #00000044;
+    transition-duration: 1s;
 }
 
 .mobilemenu #mobilemenuItems {
@@ -88,7 +76,7 @@
 }
 
 .mobilemenu .mobilemenuItems a {
-    color: var(--white);
+    color: var(--dark);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1rem;
@@ -118,7 +106,7 @@
 .mobilemenuContainer {
     padding: 80px 40px;
     height: 100vh;
-    min-width: 250px;
+    min-width: 101vw
 }
 
 @media screen and (max-width: 940px) {
@@ -128,7 +116,10 @@
     .mobilemenu {
         display: block;
     }
-    #footer {
-        display: none;
+    .header {
+background-color: var(--white);
+    }
+    .logo {
+        fill: var(--dark) !important;
     }
 }
