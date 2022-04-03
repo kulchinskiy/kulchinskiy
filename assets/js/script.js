@@ -7,14 +7,21 @@ const toggleClasses = function(elements, classToAdd, classToRemove) {
     })
 }
 
-var isInViewport = function(elem) {
-    var bounding = elem.getBoundingClientRect();
-
+function isInViewport(element) {
+    let rect = element.getBoundingClientRect();
     return (
-        bounding.top >= 0 &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        rect.top >= 0 &&
+        rect.bottom <= ((window.innerHeight + rect.height / 10) || document.documentElement.clientHeight)
     );
 };
+
+// function isInViewport(element) {
+//     const rect = element.getBoundingClientRect();
+//     return (
+//         rect.top >= 0 &&
+//         rect.bottom <= ((window.innerHeight + rect.height) || document.documentElement.clientHeight)
+//     );
+// }
 
 var bg_bright = document.querySelector('.bg_bright');
 var bg_dark = document.querySelector('.bg_dark');
