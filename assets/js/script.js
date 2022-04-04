@@ -10,8 +10,8 @@ const toggleClasses = function(elements, classToAdd, classToRemove) {
 function isInViewport(element) {
     let rect = element.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.bottom <= ((window.innerHeight + rect.height / 9) || document.documentElement.clientHeight)
+        rect.bottom >= 0 &&
+        rect.bottom <= ((window.innerHeight) || document.documentElement.clientHeight)
     );
 };
 
