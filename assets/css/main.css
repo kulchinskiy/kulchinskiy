@@ -63,7 +63,7 @@ body {
 }
 
 .fullheight {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .arrow {
@@ -105,8 +105,6 @@ ul:before {
     font-weight: bold;
     color: var(--active);
 }
-
-.even {}
 
 @media screen and (max-width: 940px) {
     body {

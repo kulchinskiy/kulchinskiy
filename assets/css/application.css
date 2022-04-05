@@ -2,7 +2,11 @@
 @import "./indicator.css";
 @import "./headernfooter.css";
 @import "./colors.css";
-@import "./landing.css";
 @import "./about.css";
 @import "./typography.css";
 @import "./buttons.css";
+
+/* Pages */
+
+@import "./landing.css";
+@import "./works.css";
