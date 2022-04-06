@@ -1,7 +1,8 @@
 :root {
-    --active: #ffb100;
+    --active: #ffbe00;
     --white: #ffffff;
     --dark: #111;
+    --cta: #ffbe00;
 }
 
 .bg_bright {
@@ -22,4 +23,15 @@
 .white {
     color: var(--white);
     fill: var(--white);
+}
+
+.cta {
+    color: var(--cta) !important;
+    fill: var(--cta);
+}
+
+.outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--active);
+    color: #00000000;
 }

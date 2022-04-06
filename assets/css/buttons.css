@@ -10,7 +10,7 @@ a:focus {
 }
 
 .link {
-    border-bottom: 1px solid;
+    color: var(--active);
 }
 
 .link:after {

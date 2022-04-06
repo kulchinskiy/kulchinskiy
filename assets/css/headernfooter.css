@@ -44,7 +44,7 @@
 
 .mobilemenuContainer a.active:before,
 .menu a.active:before {
-    content: "■ ";
+    content: "→ ";
 }
 
 
@@ -95,7 +95,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding: 2rem;
+    padding: 1.9rem;
 }
 
 .mobilemenu svg {
@@ -115,11 +115,5 @@
     }
     .mobilemenu {
         display: block;
-    }
-    .header {
-background-color: var(--white);
-    }
-    .logo {
-        fill: var(--dark) !important;
     }
 }
