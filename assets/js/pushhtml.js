@@ -14,6 +14,17 @@ var xhr = new XMLHttpRequest();
 xhr.open("GET", "works.html");
 xhr.onload = function() {
     document.getElementById("work").innerHTML = this.response;
+
+    // START TABS CLASS
+    let elements = document.querySelectorAll('div a');
+    elements.forEach(i => {
+        i.addEventListener('click', function(e) {
+            document.querySelector(".nav .tab").classList.remove("active");
+            e.target.classList.add('active');
+
+        });
+    });
+    // END TABS CLASS
 };
 
 xhr.send();
