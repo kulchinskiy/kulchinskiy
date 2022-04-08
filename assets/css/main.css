@@ -16,6 +16,10 @@ body {
     /* overflow: hidden; */
 }
 
+.wireframe {
+    border: 1px solid red;
+}
+
 .align-items-center {
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
@@ -46,12 +50,15 @@ body {
 .mb-1 {
     margin-bottom: 1rem;
 }
+
 .mb-2 {
     margin-bottom: 2rem;
 }
+
 .mb-3 {
     margin-bottom: 3rem;
 }
+
 .mb-4 {
     margin-bottom: 4rem;
 }
@@ -67,8 +74,16 @@ body {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 5rem 3rem 4rem 2rem;
+    padding: 8rem 4rem 4rem 2rem;
     /* border: 1px solid red; */
+}
+
+.half {
+    max-width: 50%;
+}
+
+.pad-2 {
+    padding: 2rem;
 }
 
 .text-center {
@@ -104,6 +119,11 @@ body {
     display: none;
 }
 
+.blinder {
+    background: #ffffffee;
+    backdrop-filter: blur(2px);
+}
+
 ul {
     padding-inline-start: 0px;
     padding-inline-end: 30px;
@@ -125,5 +145,8 @@ ul:before {
     }
     .arrowPlace {
         display: block;
+    }
+    .container {
+        padding: 6rem 4rem 2rem 2rem;
     }
 }
