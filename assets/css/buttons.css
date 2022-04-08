@@ -18,3 +18,47 @@ a:focus {
     margin-left: .5rem;
     line-height: 0%;
 }
+
+.active {
+    color: var(--active) !important;
+    fill: var(--active) !important;
+    cursor: default;
+}
+
+.tab-active {
+    background: var(--active);
+    cursor: default;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tabs :first-child {
+    border-radius: 5px 0px 0px 5px;
+    border-left: 1px solid var(--active);
+}
+
+.tabs :last-child {
+    border-radius: 0px 5px 5px 0px;
+    border-right: 1px solid var(--active);
+}
+
+.tab {
+    border-top: 1px solid var(--active);
+    border-bottom: 1px solid var(--active);
+    padding: 0.4rem 1rem;
+}
+
+#toTop {
+    position: fixed;
+    display: none;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--active);
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}

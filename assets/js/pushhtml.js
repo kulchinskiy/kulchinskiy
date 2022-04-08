@@ -21,8 +21,8 @@ xhr.onload = function() {
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].addEventListener("click", function(e) {
             e.preventDefault();
-            tabs.forEach(link => link.classList.remove("active"));
-            this.classList.add("active");
+            tabs.forEach(link => link.classList.remove("tab-active"));
+            this.classList.add("tab-active");
         });
     };
     // END TABS CLASS

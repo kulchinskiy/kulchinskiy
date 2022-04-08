@@ -36,12 +36,6 @@
     font-weight: 500;
 }
 
-.active {
-    color: var(--active) !important;
-    fill: var(--active) !important;
-    cursor: default;
-}
-
 .mobilemenuContainer a.active:before,
 .menu a.active:before {
     content: "→ ";

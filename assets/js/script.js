@@ -34,12 +34,14 @@ var menu2 = document.querySelector('.menu2');
 var menu3 = document.querySelector('.menu3');
 var header = document.querySelector('.header');
 var logo = document.querySelector('.logo');
+var totop = document.querySelector('#toTop');
 
 // DOTS AND MENUS COLOR
 
 dot1.classList.add('dots-active');
 menu1.classList.add('active');
 page1.classList.add('page-active');
+totop.classList.remove('visible');
 
 document.addEventListener('scroll', function() {
 
@@ -48,6 +50,7 @@ document.addEventListener('scroll', function() {
         menu1.classList.add('active');
         page1.classList.add('page-active');
         header.classList.remove('blinder');
+        totop.classList.remove('visible');
         dot2.classList.remove('dots-active');
         menu2.classList.remove('active');
         page2.classList.remove('page-active');
@@ -60,7 +63,8 @@ document.addEventListener('scroll', function() {
         dot2.classList.add('dots-active');
         menu2.classList.add('active');
         page2.classList.add('page-active');
-        header.classList.add('blinder')
+        header.classList.add('blinder');
+        totop.classList.add('visible');
         dot1.classList.remove('dots-active');
         menu1.classList.remove('active');
         page1.classList.remove('page-active');
@@ -73,6 +77,7 @@ document.addEventListener('scroll', function() {
         dot3.classList.add('dots-active');
         menu3.classList.add('active');
         header.classList.add('blinder');
+        totop.classList.add('visible');
         // page3.classList.add('page-active');
         dot1.classList.remove('dots-active');
         menu1.classList.remove('active');

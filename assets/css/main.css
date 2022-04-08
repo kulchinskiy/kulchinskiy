@@ -8,6 +8,14 @@ html {
     box-sizing: border-box;
 }
 
+* :focus {
+    outline-color: var(--active);
+    outline-offset: 2px;
+    outline-width: 1px;
+    outline-style: solid;
+    border-radius: 1px;
+}
+
 body {
     background-color: var(--dark);
     margin: 0;
@@ -124,6 +132,10 @@ body {
     backdrop-filter: blur(2px);
 }
 
+.visible {
+    display: flex !important;
+}
+
 ul {
     padding-inline-start: 0px;
     padding-inline-end: 30px;
@@ -147,6 +159,11 @@ ul:before {
         display: block;
     }
     .container {
-        padding: 6rem 4rem 2rem 2rem;
+        padding: 6rem 2rem 2rem 2rem;
+    }
+    .tabs {
+        width: calc(100vw - 4rem);
+        overflow: scroll;
+        white-space: nowrap;
     }
 }
