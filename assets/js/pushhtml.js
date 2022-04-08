@@ -16,14 +16,15 @@ xhr.onload = function() {
     document.getElementById("work").innerHTML = this.response;
 
     // START TABS CLASS
-    let elements = document.querySelectorAll('div a');
-    elements.forEach(i => {
-        i.addEventListener('click', function(e) {
-            document.querySelector(".nav .tab").classList.remove("active");
-            e.target.classList.add('active');
 
+    let tabs = [...document.getElementsByClassName("tab")];
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener("click", function(e) {
+            e.preventDefault();
+            tabs.forEach(link => link.classList.remove("active"));
+            this.classList.add("active");
         });
-    });
+    };
     // END TABS CLASS
 };
 

@@ -10,8 +10,12 @@ const toggleClasses = function(elements, classToAdd, classToRemove) {
 function isInViewport(element) {
     let rect = element.getBoundingClientRect();
     return (
+        // THIS SAYS THAT BOTTOM IS IN VIEWPORT
         rect.bottom >= 0 &&
-        rect.bottom <= ((window.innerHeight) || document.documentElement.clientHeight)
+        rect.bottom <= ((window.innerHeight) || document.documentElement.clientHeight) ||
+        // THIS SAYS THAT TOP AND BOTTOM ARE NOT IN VIEWPORT
+        rect.top <= 0 &&
+        rect.bottom >= ((window.innerHeight) || document.documentElement.clientHeight)
     );
 };
 
@@ -43,7 +47,7 @@ document.addEventListener('scroll', function() {
         dot1.classList.add('dots-active');
         menu1.classList.add('active');
         page1.classList.add('page-active');
-
+        header.classList.remove('blinder');
         dot2.classList.remove('dots-active');
         menu2.classList.remove('active');
         page2.classList.remove('page-active');
@@ -56,6 +60,7 @@ document.addEventListener('scroll', function() {
         dot2.classList.add('dots-active');
         menu2.classList.add('active');
         page2.classList.add('page-active');
+        header.classList.add('blinder')
         dot1.classList.remove('dots-active');
         menu1.classList.remove('active');
         page1.classList.remove('page-active');
@@ -67,7 +72,8 @@ document.addEventListener('scroll', function() {
     if (isInViewport(page3)) {
         dot3.classList.add('dots-active');
         menu3.classList.add('active');
-        page3.classList.add('page-active');
+        header.classList.add('blinder');
+        // page3.classList.add('page-active');
         dot1.classList.remove('dots-active');
         menu1.classList.remove('active');
         page1.classList.remove('page-active');
