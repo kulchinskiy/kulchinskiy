@@ -54,8 +54,8 @@ function loadHtml(id, filename) {
 // PUSHES PAGE 3 PAGE
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "team.html");
+xhr.open("GET", "about.html");
 xhr.onload = function() {
-    document.getElementById("team").innerHTML = this.response;
+    document.getElementById("about").innerHTML = this.response;
 };
 xhr.send();

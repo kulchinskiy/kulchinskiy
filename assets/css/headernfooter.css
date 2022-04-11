@@ -1,7 +1,7 @@
 .logo {
     min-width: 200px;
     max-width: 250px;
-    fill: var(--white);
+    fill: var(--active);
     transition-duration: .5s;
 }
 
@@ -18,7 +18,7 @@
     z-index: 99;
     display: flex;
     /* border: 1px solid #ffffff40; */
-    color: var(--white);
+    color: var(--dark);
     justify-content: space-between;
     padding: 2rem;
 }
@@ -39,6 +39,11 @@
 .mobilemenuContainer a.active:before,
 .menu a.active:before {
     content: "→ ";
+}
+
+.blinder {
+    background: #101824f0;
+    backdrop-filter: blur(4px);
 }
 
 

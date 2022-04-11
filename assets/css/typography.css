@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Antonio:wght@400;700&display=swap');
-body {
-    font-family: 'Anonymous Pro', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&family=Anonymous+Pro:wght@400;700&display=swap');
+body,
+h3 {
+    font-family: 'Anek Tamil', monospace;
 }
 
-h1, h2, h3 {
-    font-family: 'Antonio', sans-serif;
-    line-height: 1.2;
+h1,
+h2 {
+    font-family: 'Anek Tamil', sans-serif;
+    line-height: 1.1;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -13,12 +15,20 @@ h1, h2, h3 {
 h1 {
     font-size: 6.5rem;
 }
+
 h2 {
     font-size: 3rem;
 }
 
 h3 {
-    line-height: 1.6;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+h4 {
+    color: var(--active);
+    font-size: 1rem;
+    margin: 1rem 0rem;
 }
 
 p {

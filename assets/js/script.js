@@ -1,4 +1,4 @@
-// DEFINITION
+// RESPONSIVE COLOR aND INDICATOR
 
 const toggleClasses = function(elements, classToAdd, classToRemove) {
     elements.map((e, i) => {
@@ -24,7 +24,7 @@ var bg_dark = document.querySelector('.bg_dark');
 var pages = document.querySelector('#pages');
 var page1 = document.querySelector('#landing');
 var page2 = document.querySelector('#work');
-var page3 = document.querySelector('#team');
+var page3 = document.querySelector('#about');
 var dot1 = document.querySelector('.dot-1');
 var dot2 = document.querySelector('.dot-2');
 var dot3 = document.querySelector('.dot-3');
@@ -98,17 +98,3 @@ document.addEventListener('scroll', function() {
         toggleClasses([logo, menu], 'white', 'dark');
     }
 });
-
-// END NAVIGATION DOTS AND MENU
-
-// START BURGER MENU
-function myFunction() {
-    var x = document.getElementById("mobilemenuItems");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
-// START BURGER MENU
