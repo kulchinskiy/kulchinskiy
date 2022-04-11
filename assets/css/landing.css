@@ -33,61 +33,23 @@
     display: none !important;
 }
 
-.lead {
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-transform: uppercase;
-    cursor: pointer;
+.typeText::after {
+    content: "_";
+    animation: blink 1s step-end infinite;
+    animation: none;
 }
 
-.lead_outer {
-    height: 95px;
-    overflow: hidden;
-    margin-top: .7rem;
+.showAnim.typeText::after {
+    animation: blink 1s step-end infinite;
 }
 
-.lead_links a {
-    margin-bottom: .5rem;
-}
-
-.lead_inner {
-    position: relative;
-    animation: rotate 20s ease-in-out infinite;
-}
-
-@keyframes rotate {
+@keyframes blink {
     0%,
-    5% {
-        transform: translateY(-24px);
-    }
-    10%,
-    15% {
-        transform: translateY(-147px);
-    }
-    20%,
-    25% {
-        transform: translateY(-272px);
-    }
-    30%,
-    35% {
-        transform: translateY(-395px);
-    }
-    40%,
-    45% {
-        transform: translateY(-520px);
-    }
-    50%,
-    55% {
-        transform: translateY(-642px);
-    }
-    60%,
-    80% {
-        transform: translateY(-768px);
-    }
-    85%,
     100% {
-        transform: translateY(-892px);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
     }
 }
 

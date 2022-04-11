@@ -18,7 +18,7 @@
     z-index: 99;
     display: flex;
     /* border: 1px solid #ffffff40; */
-    color: var(--dark);
+    color: var(--white);
     justify-content: space-between;
     padding: 2rem;
 }
@@ -42,7 +42,7 @@
 }
 
 .blinder {
-    background: #101824f0;
+    background: #fffffff0;
     backdrop-filter: blur(4px);
 }
 

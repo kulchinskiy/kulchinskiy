@@ -110,6 +110,10 @@ body {
     padding: 4rem;
 }
 
+.space {
+    margin: 2rem 0rem;
+}
+
 .text-center {
     text-align: center;
 }
