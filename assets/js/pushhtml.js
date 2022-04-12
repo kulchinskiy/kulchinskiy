@@ -8,7 +8,7 @@ xhr.onload = function() {
     // START TYPER
     var typeText = document.querySelector(".typeText")
     var textToBeTyped = "a software engineer"
-    var textToBeTypedArr = ["I am a Full stack Designer", "and also a Front end Developer", "I live in sunny Lisbon, Portugal ☀️", "take a look at some of my work below", "and let's get in touch!"]
+    var textToBeTypedArr = ["Product Designer", "Front end Developer", "Motion Designer", "vFX & Video Producer", "Basically a Full stack Designer 🦄"]
     var index = 0,
         isAdding = true,
         textToBeTypedIndex = 0
@@ -59,9 +59,9 @@ xhr.send();
 // PUSHES PAGE 2 PAGE
 
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "works.html");
+xhr.open("GET", "portfolio.html");
 xhr.onload = function() {
-    document.getElementById("work").innerHTML = this.response;
+    document.getElementById("portfolio").innerHTML = this.response;
 
     // START TABS CLASS
 

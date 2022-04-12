@@ -1,7 +1,7 @@
 .logo {
     min-width: 200px;
     max-width: 250px;
-    fill: var(--active);
+    fill: var(--white);
     transition-duration: .5s;
 }
 
