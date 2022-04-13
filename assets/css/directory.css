@@ -111,26 +111,6 @@
     height: 100%;
 }
 
-label {
-    -webkit-filter: saturate(0);
-    filter: saturate(0);
-    -webkit-transition-duration: .5s;
-    -o-transition-duration: .5s;
-    transition-duration: .5s;
-}
-
-label:hover {
-    -webkit-filter: saturate(1);
-    filter: saturate(1);
-    -webkit-transition-duration: .5s;
-    -o-transition-duration: .5s;
-    transition-duration: .5s;
-}
-
-label:hover .card {
-    cursor: cursor;
-}
-
 input {
     display: none;
 }

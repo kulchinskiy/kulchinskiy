@@ -60,4 +60,81 @@ a:hover {
     height: 50px;
     align-items: center;
     justify-content: center;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+
+/* XP */
+
+.cta {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    border: 1px solid var(--active);
+    transition: 0.5s;
+    letter-spacing: 1px;
+    box-shadow: 5px 5px 10px #00000030;
+    font-family: 'Anek Tamil', sans-serif;
+    font-weight: 400;
+}
+
+.cta button {
+    width: 100%;
+    height: 100%;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    background: var(--active);
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: var(--dark);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+    text-transform: uppercase;
+    font-family: 'Anek Tamil', sans-serif;
+    font-weight: 400;
+}
+
+.cta button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+}
+
+.cta-backdrop {
+    position: absolute;
+    color: var(--active);
+    text-align: center;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: .8rem;
+    margin-top: 11px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
 }

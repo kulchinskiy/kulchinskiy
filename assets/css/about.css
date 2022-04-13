@@ -1,54 +1,49 @@
-.profile_photo {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: left;
-}
-
-.space>div {
-    margin: 3rem 0rem;
+#about {
+    z-index: 0;
+    position: relative;
 }
 
 #contacts {
-    display: inline-flex;
-    gap: 3rem;
+    padding: 2rem 0rem;
 }
 
-#contacts>div {
-    flex-basis: min-content;
+footer {
+    background-color: var(--active);
+    color: var(--dark);
+    box-shadow: inset 0 0 10px #00000030;
+    width: 100vw;
+    padding: 1rem 2rem;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
 }
 
 #mail:before {
     content: "M:";
-    color: var(--active);
+    font-weight: 500;
+    color: var(--dark);
     padding-right: .5rem;
 }
 
 #tel:before {
     content: "T:";
-    color: var(--active);
+    font-weight: 500;
+    color: var(--dark);
     padding-right: .5rem;
 }
 
 #in:before {
     content: "In:";
-    color: var(--active);
+    font-weight: 500;
+    color: var(--dark);
     padding-right: .5rem;
 }
 
 #be:before {
     content: "Be:";
-    color: var(--active);
+    font-weight: 500;
+    color: var(--dark);
     padding-right: .5rem;
 }
 
-@media screen and (max-width: 940px) {
-    #about .flex {
-        flex-direction: column-reverse;
-    }
-    .profile_photo {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-    }
-}
+@media screen and (max-width: 940px) {}

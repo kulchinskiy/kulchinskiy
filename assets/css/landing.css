@@ -12,7 +12,7 @@
 }
 
 #landing {
-    background-color: #0c2838;
+    background-color: #181a1b;
     background-image: radial-gradient(#39505d 0.75px, transparent 0.75px), radial-gradient(#39505d 0.75px, #0c2838 0.75px);
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
@@ -38,18 +38,6 @@
 
 .disappear {
     display: none !important;
-}
-
-#name:after {
-    content: "✌🏼";
-    margin-left: 1rem;
-    opacity: 0;
-    transition-duration: .3s;
-}
-
-#name:hover:after {
-    opacity: 1;
-    transition-duration: .3s;
 }
 
 .typeText::after {
@@ -160,7 +148,7 @@
 /*waves****************************/
 
 #landing .box {
-    position: absolute;
+    position: fixed;
     top: 0;
     transform: rotate(80deg);
     left: 0;
@@ -244,12 +232,6 @@
     background: #25a7d7;
     background: -webkit-linear-gradient(#25a7d7, #00ffac);
     background: linear-gradient(#25a7d7, #25a7d7);
-}
-
-.icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 5px;
 }
 
 
