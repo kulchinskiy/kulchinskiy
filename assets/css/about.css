@@ -88,4 +88,12 @@
     border-radius: 50%;
 }
 
-@media screen and (max-width: 940px) {}
+@media screen and (max-width: 940px) {
+    .info_data {
+        margin-left: 1rem;
+    }
+    #about_header h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+}

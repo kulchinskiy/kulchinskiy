@@ -129,7 +129,7 @@ body {
 }
 
 .fullwidth {
-    min-width: 100%;
+    width: 100%;
 }
 
 .arrow {
@@ -190,7 +190,9 @@ ul:before {
         overflow: scroll;
         white-space: nowrap;
     }
-    .half {
+    .half,
+    .third-1,
+    .third-2 {
         max-width: 100%;
     }
     .flex {
