@@ -62,6 +62,7 @@ a:hover {
     justify-content: center;
     color: var(--dark);
     border: 1px solid var(--dark);
+    z-index: 200;
 }
 
 

@@ -8,7 +8,7 @@ xhr.onload = function() {
     // START TYPER
     var typeText = document.querySelector(".typeText")
     var textToBeTyped = "a software engineer"
-    var textToBeTypedArr = ["Product Designer", "Front end Developer", "Motion Designer", "vFX & Video Producer", "Basically a Full stack Designer 🦄"]
+    var textToBeTypedArr = ["Product Designer", "Front end Developer", "vFX & Motion Designer", "a Full stack Designer 🦄"]
     var index = 0,
         isAdding = true,
         textToBeTypedIndex = 0

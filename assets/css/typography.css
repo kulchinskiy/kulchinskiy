@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500&family=Raleway:wght@200;400;600;800;900&display=swap');
 body,
 h3 {
     font-family: 'Anek Tamil', monospace;
@@ -10,17 +10,18 @@ h2,
 h4 {
     font-family: 'Anek Tamil', sans-serif;
     line-height: 1.1;
-    font-weight: 400;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 600;
 }
 
 h2 {
     font-size: 3rem;
+    font-weight: 300;
 }
 
 h3 {
@@ -37,12 +38,11 @@ h4 {
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.4;
 }
 
-label {
-    color: var(--active);
-    opacity: .6;
+.bold {
+    font-weight: 500;
 }
 
 @media screen and (max-width: 940px) {

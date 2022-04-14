@@ -22,15 +22,6 @@
     margin-bottom: 3rem;
 }
 
-.profile_photo_small {
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    object-fit: cover;
-    box-shadow: 2px 2px 10px #00000080;
-    align-self: center;
-}
-
 .lead_mobile {
     text-transform: uppercase;
     display: none;
@@ -52,30 +43,30 @@
 
 #profile_badge {
     position: relative;
-    margin: 1rem 0;
-    width: 100px;
-    height: 100px;
+    /* margin: .5rem 0; */
+    width: 50px;
+    height: 50px;
 }
 
 #profile_badge img {
-    width: 100px;
+    width: 50px;
     position: absolute;
     bottom: 0px;
     border-radius: 100%;
     animation: reveal .2s normal forwards;
     opacity: 0;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 #profile_badge .mask {
-    border-radius: 100%;
+    border-radius: 50%;
     /* box-sizing: border-box; */
-    border: 50px solid var(--active);
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     bottom: 0px;
-    animation: mask 1s normal forwards;
+    animation: mask 2s normal forwards;
+    border: 25px solid var(--active);
     opacity: 0;
     animation-timing-function: ease-in-out;
     animation-delay: 1s;
@@ -83,7 +74,7 @@
 
 @keyframes mask {
     0% {
-        transform: scale(0.1);
+        transform: scale(0);
         opacity: 1;
     }
     50% {
@@ -91,7 +82,7 @@
         opacity: 1;
     }
     50% {
-        border: 50px solid var(--active);
+        border: 25px solid var(--active);
         opacity: 1;
     }
     100% {

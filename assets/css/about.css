@@ -3,39 +3,32 @@
     position: relative;
 }
 
-#contacts {
-    padding: 2rem 0rem;
+#about article {
+    gap: 4rem;
 }
 
-footer {
-    background-color: var(--active);
-    color: var(--dark);
-    box-shadow: inset 0 0 10px #00000030;
-    width: 100vw;
-    padding: 1rem 2rem;
-    position: relative;
-    bottom: 0;
-    z-index: 100;
+#contacts {
+    display: grid;
 }
 
 #mail:before {
     content: "M:";
     font-weight: 500;
-    color: var(--dark);
+    color: var(--active);
     padding-right: .5rem;
 }
 
 #tel:before {
     content: "T:";
     font-weight: 500;
-    color: var(--dark);
+    color: var(--active);
     padding-right: .5rem;
 }
 
 #in:before {
     content: "In:";
     font-weight: 500;
-    color: var(--dark);
+    color: var(--active);
     padding-right: .5rem;
 }
 
@@ -44,6 +37,55 @@ footer {
     font-weight: 500;
     color: var(--dark);
     padding-right: .5rem;
+}
+
+#about_info {
+    width: 100%;
+    place-content: space-between;
+}
+
+.info_item {
+    display: grid;
+}
+
+.info_header p:before {
+    content: "— ";
+    color: var(--active);
+    margin: 0;
+}
+
+.info_data p {
+    display: grid;
+}
+
+.role {
+    font-weight: 500;
+}
+
+.dates {
+    opacity: .3;
+    font-style: italic;
+}
+
+.details {
+    margin-top: .5rem;
+}
+
+#links a {
+    display: block;
+}
+
+#links a:before {
+    content: "— ";
+    color: var(--active);
+    margin: 0;
+}
+
+#profile_photo {
+    padding-top: 100%;
+    background-image: url(/assets/media/arcadiykulchinskiy_profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 940px) {}
