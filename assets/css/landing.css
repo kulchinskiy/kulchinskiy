@@ -120,9 +120,6 @@
     .lead_mobile {
         display: block;
     }
-    #profile_badge {
-        display: none !important;
-    }
     #profile_sm {
         display: block;
     }

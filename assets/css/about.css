@@ -4,11 +4,13 @@
 }
 
 #about article {
-    gap: 4rem;
+    gap: 6rem;
 }
 
-#contacts {
-    display: grid;
+#contact {
+    border-left: 1px solid var(--active);
+    padding-left: 1rem;
+    height: fit-content;
 }
 
 #mail:before {
@@ -41,7 +43,6 @@
 
 #about_info {
     width: 100%;
-    place-content: space-between;
 }
 
 .info_item {
@@ -60,6 +61,7 @@
 
 .role {
     font-weight: 500;
+    color: var(--active);
 }
 
 .dates {
@@ -75,17 +77,32 @@
     display: block;
 }
 
-#links a:before {
-    content: "— ";
-    color: var(--active);
-    margin: 0;
-}
-
 #profile_photo {
     padding-top: 100%;
     background-image: url(/assets/media/arcadiykulchinskiy_profile.jpg);
     background-size: cover;
     border-radius: 50%;
+}
+
+.expanded div:before {
+    content: "See less" !important;
+}
+
+.expanded div {
+    background-color: transparent !important;
+    color: var(--active);
+}
+
+.reveal div:before {
+    content: "See more";
+}
+
+.hidden {
+    display: none;
+}
+
+.info_header {
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 940px) {
@@ -95,5 +112,20 @@
     #about_header h2 {
         font-size: 2rem;
         line-height: 1.2;
+    }
+    #about article {
+        gap: 0;
+    }
+    #contact {
+        background: var(--active);
+        width: 100%;
+        padding: 1rem;
+        color: var(--dark);
+    }
+    #contact:before {
+        content: "Let's talk";
+        font-size: 2rem;
+        line-height: 4rem;
+        margin-bottom: 2rem;
     }
 }

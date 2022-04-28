@@ -24,6 +24,14 @@ body {
     /* overflow: hidden; */
 }
 
+p {
+    margin: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
 .wireframe {
     border: 1px solid red;
 }
@@ -45,6 +53,10 @@ body {
     display: -ms-flexbox!important;
     display: flex !important;
     flex-wrap: wrap;
+}
+
+.gap {
+    place-content: space-between;
 }
 
 .gap-1 {
@@ -73,6 +85,22 @@ body {
 
 .mb-4 {
     margin-bottom: 4rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
 }
 
 .center {
@@ -185,6 +213,9 @@ ul:before {
     .container {
         padding: 6rem 0rem 0rem 0rem;
     }
+    .content {
+        padding: 0rem 2rem 0rem 2rem;
+    }
     .tabs {
         width: calc(100vw - 4rem);
         overflow: scroll;
@@ -194,8 +225,5 @@ ul:before {
     .third-1,
     .third-2 {
         max-width: 100%;
-    }
-    .flex {
-        flex-flow: column;
     }
 }

@@ -105,5 +105,22 @@ var xhr = new XMLHttpRequest();
 xhr.open("GET", "about.html");
 xhr.onload = function() {
     document.getElementById("about").innerHTML = this.response;
+
+    // START EXPANDABLE
+    var reveal = document.getElementsByClassName("reveal");
+    var i;
+
+    for (i = 0; i < reveal.length; i++) {
+        reveal[i].addEventListener("click", function() {
+            this.classList.toggle("expanded");
+            var hidden = this.nextElementSibling;
+            if (hidden.style.display === "block") {
+                hidden.style.display = "none";
+            } else {
+                hidden.style.display = "block";
+            }
+        });
+    }
+    // END EXPANDABLE
 };
 xhr.send();
