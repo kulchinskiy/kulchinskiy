@@ -1,0 +1,25 @@
+{
+    "name": "kulchinskiy",
+    "version": "1.0.0",
+    "description": "- 👋 Hi, I’m @kulchinskiy - 👀 I’m interested in Design, UX and Development - 🌱 I’m currently learning Python and Javascript - 📫 arcadiy.kulchinskiy@gmail.com",
+    "main": "assets/js/script.js",
+    "scripts": {
+        "build": "node_modules/.bin/tsc src/**",
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kulchinskiy/kulchinskiy.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kulchinskiy/kulchinskiy/issues"
+    },
+    "homepage": "https://github.com/kulchinskiy/kulchinskiy#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@tsconfig/esm": "^1.0.0",
+        "typescript": "^4.6.4"
+    }
+}
