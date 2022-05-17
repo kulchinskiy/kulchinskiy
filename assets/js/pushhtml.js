@@ -74,6 +74,9 @@ xhr.onload = function() {
         });
     };
     // END TABS CLASS
+    // START DEFAULT FILE LOAD
+    loadHtml("template", "template0.html");
+    // END DEFAULT FILE LOAD
 };
 
 xhr.send();
