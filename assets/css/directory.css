@@ -99,8 +99,9 @@
     width: calc(33.3333% - 1rem);
     cursor: pointer;
     position: relative;
-    box-shadow: 0px 0px 10px #00000030;
     overflow: hidden;
+    background: #dddddd;
+    border-radius: 20px;
 }
 
 .card:after {
@@ -122,7 +123,7 @@
     position: absolute;
     bottom: 0;
     background: #000000;
-    background: linear-gradient(0deg, #000000aa 15%, #00000000 100%);
+    background: linear-gradient(0deg, #000000aa 0%, #00000000 100%);
     width: 100%;
     color: white;
     padding: 1.5rem;

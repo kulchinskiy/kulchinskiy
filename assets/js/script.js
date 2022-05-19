@@ -11,10 +11,10 @@ function isInViewport(element) {
     let rect = element.getBoundingClientRect();
     return (
         // THIS SAYS THAT BOTTOM IS IN VIEWPORT
-        rect.bottom >= 0 &&
+        rect.bottom >= 85 &&
         rect.bottom <= ((window.innerHeight) || document.documentElement.clientHeight) ||
         // THIS SAYS THAT TOP AND BOTTOM ARE NOT IN VIEWPORT
-        rect.top <= 0 &&
+        rect.top <= 85 &&
         rect.bottom >= ((window.innerHeight) || document.documentElement.clientHeight)
     );
 };

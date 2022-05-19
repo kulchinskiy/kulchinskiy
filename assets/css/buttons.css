@@ -48,7 +48,6 @@ a {
 
 #toTop {
     position: fixed;
-    display: none;
     bottom: 2rem;
     right: 2rem;
     background-color: var(--active);
@@ -59,6 +58,7 @@ a {
     color: var(--dark);
     border: 1px solid var(--dark);
     z-index: 200;
+    display: none;
 }
 
 .btn-primary {

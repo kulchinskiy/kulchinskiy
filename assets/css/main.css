@@ -203,6 +203,12 @@ ul:before {
     color: var(--active);
 }
 
+hr {
+    width: 30%;
+    border-style: none;
+    border-top: 2px dotted #ddd;
+}
+
 @media screen and (max-width: 940px) {
     body {
         overflow: scroll;

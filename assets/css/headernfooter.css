@@ -21,6 +21,8 @@
     color: var(--white);
     justify-content: space-between;
     padding: 2rem;
+    background: #ffffff00;
+    transition: .3s;
 }
 
 .menu {
