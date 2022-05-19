@@ -17,10 +17,10 @@ html {
 }
 
 body {
-    background-color: var(--dark);
+    background-color: var(--white);
     margin: 0;
     padding: 0;
-    color: var(--white);
+    color: var(--dark);
     /* overflow: hidden; */
 }
 
@@ -120,7 +120,7 @@ p {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 8rem 0rem 0rem 0rem;
+    padding: 8rem 0rem 8rem 0rem;
     /* border: 1px solid red; */
 }
 

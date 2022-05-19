@@ -93,7 +93,7 @@ document.addEventListener('scroll', function() {
     if (!activePage) return;
 
     if (activePage.classList.contains('bg_bright')) {
-        toggleClasses([logo, menu], 'white', 'dark');
+        toggleClasses([logo, menu], 'dark', 'white');
     } else {
         toggleClasses([logo, menu], 'white', 'dark');
     }

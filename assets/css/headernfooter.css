@@ -42,8 +42,8 @@
 }
 
 .blinder {
-    background: #0c2838f0;
-    backdrop-filter: blur(4px);
+    background: #ffffffee;
+    backdrop-filter: blur(5px);
 }
 
 

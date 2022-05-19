@@ -31,6 +31,11 @@
     display: none !important;
 }
 
+.typeText, .textAbove, #landing p {
+    color: #ffffff;
+}
+
+
 .typeText::after {
     content: "_";
     animation: blink 1s step-end infinite;
@@ -136,7 +141,7 @@
 /*waves****************************/
 
 #landing .box {
-    position: fixed;
+    position: absolute;
     top: 0;
     transform: rotate(80deg);
     left: 0;

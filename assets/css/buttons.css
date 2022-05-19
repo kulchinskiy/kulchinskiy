@@ -4,10 +4,6 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    opacity: .7;
-}
-
 .link {
     color: var(--active);
 }

@@ -37,6 +37,11 @@ h4 {
     width: fit-content;
 }
 
+h5 {
+    margin: 0;
+    font-weight: 300;
+}
+
 p {
     line-height: 1.4;
 }
