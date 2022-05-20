@@ -85,7 +85,7 @@
 }
 
 .expanded div:before {
-    content: "See less" !important;
+    content: "See resumed profile" !important;
 }
 
 .expanded div {
@@ -94,7 +94,7 @@
 }
 
 .reveal div:before {
-    content: "See more";
+    content: "See full profile";
 }
 
 .hidden {

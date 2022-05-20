@@ -31,10 +31,11 @@
     display: none !important;
 }
 
-.typeText, .textAbove, #landing p {
+.typeText,
+.textAbove,
+#landing p {
     color: #ffffff;
 }
-
 
 .typeText::after {
     content: "_";
@@ -140,11 +141,16 @@
 
 /*waves****************************/
 
+.page-active>.box {
+    display: block !important;
+}
+
 #landing .box {
-    position: absolute;
+    position: fixed;
     top: 0;
     transform: rotate(80deg);
     left: 0;
+    display: none;
 }
 
 .wave {
