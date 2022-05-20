@@ -10,6 +10,7 @@
 
 #logo:after {
     color: var(--active);
+    font-weight: 600;
 }
 
 #logo.landing:after {
@@ -17,11 +18,11 @@
 }
 
 #logo.portfolio:after {
-    content: "portfolio";
+    content: ".portfolio";
 }
 
 #logo.about:after {
-    content: "about"
+    content: ".about"
 }
 
 .logo {
