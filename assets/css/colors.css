@@ -2,6 +2,8 @@
     --active: #11de93;
     --white: #ffffff;
     --dark: #0c2838;
+    --corners: 35px;
+    --anim: ease-in-out .3s;
 }
 
 .bg_bright {

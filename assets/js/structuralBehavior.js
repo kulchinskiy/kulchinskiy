@@ -34,6 +34,7 @@ var menu2 = document.querySelector('.menu2');
 var menu3 = document.querySelector('.menu3');
 var header = document.querySelector('.header');
 var logo = document.querySelector('.logo');
+var logoHolder = document.querySelector('#logo');
 var totop = document.querySelector('#toTop');
 
 // DOTS AND MENUS COLOR
@@ -46,45 +47,76 @@ totop.classList.remove('visible');
 document.addEventListener('scroll', function() {
 
     if (isInViewport(page1)) {
+        // PAGE 1
         dot1.classList.add('dots-active');
         menu1.classList.add('active');
         page1.classList.add('page-active');
-        header.classList.remove('blinder');
-        totop.classList.remove('visible');
+        logoHolder.classList.add('landing');
+
+        // PAGE 2
         dot2.classList.remove('dots-active');
         menu2.classList.remove('active');
         page2.classList.remove('page-active');
+        logoHolder.classList.remove('portfolio');
+
+        // PAGE 3
         dot3.classList.remove('dots-active');
         menu3.classList.remove('active');
         page3.classList.remove('page-active');
+        logoHolder.classList.remove('about');
+
+        // FEATURES
+        header.classList.remove('blinder');
+        totop.classList.remove('visible');
     }
 
     if (isInViewport(page2)) {
+        // PAGE 1
+        dot1.classList.remove('dots-active');
+        menu1.classList.remove('active');
+        page1.classList.remove('page-active');
+        logoHolder.classList.remove('landing');
+
+        // PAGE 2
         dot2.classList.add('dots-active');
         menu2.classList.add('active');
         page2.classList.add('page-active');
-        header.classList.add('blinder');
-        totop.classList.add('visible');
-        dot1.classList.remove('dots-active');
-        menu1.classList.remove('active');
-        page1.classList.remove('page-active');
+        logoHolder.classList.add('portfolio');
+
+        // PAGE 3
         dot3.classList.remove('dots-active');
         menu3.classList.remove('active');
         page3.classList.remove('page-active');
+        logoHolder.classList.remove('about');
+
+        // FEATURES
+        header.classList.add('blinder');
+        totop.classList.add('visible');
     }
 
     if (isInViewport(page3)) {
-        dot3.classList.add('dots-active');
-        menu3.classList.add('active');
-        header.classList.add('blinder');
-        totop.classList.add('visible');
-        // page3.classList.add('page-active');
+
+        // PAGE 1
         dot1.classList.remove('dots-active');
         menu1.classList.remove('active');
         page1.classList.remove('page-active');
+        logoHolder.classList.remove('about');
+
+        // PAGE 2
         dot2.classList.remove('dots-active');
         menu2.classList.remove('active');
         page2.classList.remove('page-active');
+        logoHolder.classList.remove('portfolio');
+
+        // PAGE 3
+        dot3.classList.add('dots-active');
+        menu3.classList.add('active');
+        logoHolder.classList.add('about');
+        // page3.classList.add('page-active');
+
+        // FEATURES
+        header.classList.add('blinder');
+        totop.classList.add('visible');
     }
 
     // RESPONSIVE COLOR

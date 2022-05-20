@@ -1,14 +1,43 @@
+/* START LOGO */
+
+#logo {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+
+#logo:after {
+    color: var(--active);
+}
+
+#logo.landing:after {
+    content: "";
+}
+
+#logo.portfolio:after {
+    content: "portfolio";
+}
+
+#logo.about:after {
+    content: "about"
+}
+
 .logo {
     min-width: 200px;
     max-width: 250px;
     fill: var(--white);
-    transition-duration: .5s;
+    transition-duration: var(--anim);
 }
 
 .logo:hover,
 .logo:focus {
     opacity: .7;
 }
+
+
+/* END LOGO */
 
 .header {
     position: fixed;
@@ -22,7 +51,7 @@
     justify-content: space-between;
     padding: 2rem;
     background: #ffffff00;
-    transition: .3s;
+    transition: var(--anim);
 }
 
 .menu {
@@ -34,7 +63,7 @@
     margin: 0rem .7rem;
     color: inherit;
     font-size: .9rem;
-    transition: .3s;
+    transition: var(--anim);
     font-weight: 500;
 }
 
@@ -53,7 +82,7 @@
 
 #burger_icon rect {
     fill: var(--active);
-    transition: .5s;
+    transition: var(--anim);
 }
 
 #burger_icon:hover rect,
@@ -69,7 +98,7 @@
     top: 0vh;
     display: none;
     backdrop-filter: blur(5px);
-    transition-duration: 1s;
+    transition-duration: var(--anim);
 }
 
 .mobilemenu #mobilemenuItems {
@@ -82,7 +111,7 @@
     text-decoration: none;
     font-size: 1rem;
     display: block;
-    transition: .5s;
+    transition: var(--anim);
 }
 
 .mobilemenu .mobilemenuItems a:hover,
