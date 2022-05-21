@@ -2,8 +2,10 @@
     --active: #11de93;
     --white: #ffffff;
     --dark: #0c2838;
-    --corners: 35px;
+    --grey: #888888;
+    --corners: 10px;
     --anim: ease-in-out .3s;
+    --links: 400;
 }
 
 .bg_bright {
@@ -24,11 +26,6 @@
 .white {
     color: var(--white);
     fill: var(--white);
-}
-
-.cta {
-    color: var(--cta) !important;
-    fill: var(--cta);
 }
 
 .outline {

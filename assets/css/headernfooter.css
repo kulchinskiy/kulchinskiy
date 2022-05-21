@@ -9,20 +9,19 @@
 }
 
 #logo:after {
-    color: var(--active);
     font-weight: 600;
 }
 
 #logo.landing:after {
-    content: "";
+    content: "Kulchinskiy.";
 }
 
 #logo.portfolio:after {
-    content: ".portfolio";
+    content: "My work.";
 }
 
 #logo.about:after {
-    content: ".about"
+    content: "Let's meet."
 }
 
 .logo {
@@ -30,11 +29,7 @@
     max-width: 250px;
     fill: var(--white);
     transition-duration: var(--anim);
-}
-
-.logo:hover,
-.logo:focus {
-    opacity: .7;
+    cursor: default;
 }
 
 
@@ -66,11 +61,6 @@
     font-size: .9rem;
     transition: var(--anim);
     font-weight: 500;
-}
-
-.mobilemenuContainer a.active:before,
-.menu a.active:before {
-    content: "→ ";
 }
 
 .blinder {

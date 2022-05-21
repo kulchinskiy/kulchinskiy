@@ -13,7 +13,7 @@
 .search-form {
     display: block;
     border: 0px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--grey);
     background: none;
     font-size: 1rem;
     color: #495057;

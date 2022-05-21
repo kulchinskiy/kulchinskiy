@@ -20,7 +20,7 @@ body {
     background-color: var(--white);
     margin: 0;
     padding: 0;
-    color: var(--dark);
+    color: var(--white);
     /* overflow: hidden; */
 }
 
@@ -158,31 +158,6 @@ p {
 
 .fullwidth {
     width: 100%;
-}
-
-.arrow {
-    height: 10px;
-    width: 10px;
-    border: 3px solid;
-    transform: rotate(45deg);
-    border-top: none;
-    border-left: none;
-    border-color: var(--white);
-}
-
-.arrow:hover,
-.arrow:focus,
-.arrow:active {
-    opacity: .7;
-}
-
-.arrowPlace {
-    height: 20px;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    z-index: 3;
-    display: none;
 }
 
 .visible {
