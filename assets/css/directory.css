@@ -48,34 +48,6 @@
     transition-duration: var(--anim);
 }
 
-.clear-btn {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    outline: none;
-    opacity: 0%;
-    position: relative;
-    right: 15px;
-}
-
-.clear-btn a {
-    font-size: 1.5rem;
-    font-weight: 200;
-    text-decoration: none;
-    position: relative;
-    left: -5px;
-    top: 10px;
-    color: #ccc;
-    z-index: 99;
-}
-
-.clear-btn a:hover {
-    color: #2d4274;
-    -webkit-transition-duration: var(--anim);
-    -o-transition-duration: var(--anim);
-    transition-duration: var(--anim);
-}
-
 
 /* END SEARCH */
 

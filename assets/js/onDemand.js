@@ -32,6 +32,8 @@ function searchFilter() {
 }
 // END SEARCH
 
+// START LOAD PAGES
+
 function loadHtml(id, filename) {
     console.log(`div id: ${id}, filename: ${filename}`);
 
@@ -53,3 +55,5 @@ function loadHtml(id, filename) {
         return;
     }
 }
+
+// END LOAD PAGES

@@ -1,8 +1,66 @@
 #portfolio {
-    z-index: 20;
     position: relative;
     background-color: #ffffff;
     background-image: radial-gradient(var(--active) 0.75px, transparent 0.75px), radial-gradient(var(--active) 0.75px, #ffffff 0.75px);
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
 }
+
+.work-item {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+
+/* START MODAL */
+
+[id^=modal] {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+[id^=modal]:target {
+    display: block;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.modal__overlay {
+    position: fixed;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--dark);
+    opacity: .9;
+}
+
+.modal__wrapper {
+    position: fixed;
+    z-index: 9;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 8px;
+    padding: 58px 32px 32px 32px;
+    background: #fff;
+}
+
+.modal__close {
+    position: absolute;
+    top: 16px;
+    right: 26px;
+}
+
+
+/* END MODAL */

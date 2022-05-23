@@ -128,6 +128,18 @@ p {
     padding: 0rem 4rem 0rem 4rem;
 }
 
+.quarter-1 {
+    max-width: 25%;
+}
+
+.quarter-2 {
+    max-width: 50%;
+}
+
+.quarter-3 {
+    max-width: 75%;
+}
+
 .third-1 {
     max-width: 33.3333%;
 }

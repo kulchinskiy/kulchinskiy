@@ -78,6 +78,7 @@ xhr.onload = function() {
     // START DEFAULT FILE LOAD
     loadHtml("template", "template0.html");
     // END DEFAULT FILE LOAD
+
 };
 
 xhr.send();

@@ -8,20 +8,31 @@ a {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+#back,
+#work-description {
+    position: sticky;
+    top: 6rem;
+    height: fit-content;
+}
+
+.btn-primary {
     background-color: var(--active);
     width: 50px;
     height: 50px;
     align-items: center;
     justify-content: center;
     color: var(--dark);
-    z-index: 200;
-    display: none;
     border-radius: var(--corners);
     box-shadow: 0px 3px 10px #00000022;
     transition: var(--anim);
+    display: flex;
 }
 
-#toTop:hover {
+.btn-primary:hover {
     filter: brightness(.95);
     box-shadow: 0px 0px 0px #00000022;
 }
