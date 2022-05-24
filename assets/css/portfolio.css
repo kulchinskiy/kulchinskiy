@@ -1,15 +1,25 @@
 #portfolio {
+    background: var(--white);
     position: relative;
-    background-color: #ffffff;
-    background-image: radial-gradient(var(--active) 0.75px, transparent 0.75px), radial-gradient(var(--active) 0.75px, #ffffff 0.75px);
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px;
 }
 
 .work-item {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     margin-top: 2rem;
+}
+
+#description {
+    margin-top: 2rem;
+    font-size: .9rem;
+}
+
+#description h4 {
+    color: var(--grey);
+}
+
+#description p {
+    color: var(--dark);
 }
 
 

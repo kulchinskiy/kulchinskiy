@@ -120,7 +120,7 @@ p {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 8rem 0rem 8rem 0rem;
+    padding: 6rem 0rem 4rem 0rem;
     /* border: 1px solid red; */
 }
 
@@ -128,28 +128,54 @@ p {
     padding: 0rem 4rem 0rem 4rem;
 }
 
+.penta-1 {
+    max-width: 20%;
+    min-width: 20%;
+}
+
+.penta-2 {
+    max-width: 40%;
+    min-width: 40%;
+}
+
+.penta-3 {
+    max-width: 60%;
+    min-width: 60%;
+}
+
+.penta-4 {
+    max-width: 80%;
+    min-width: 80%;
+}
+
 .quarter-1 {
     max-width: 25%;
+    min-width: 25%;
 }
 
 .quarter-2 {
     max-width: 50%;
+    min-width: 50%;
 }
 
 .quarter-3 {
     max-width: 75%;
+    min-width: 75%;
 }
 
 .third-1 {
     max-width: 33.3333%;
+    min-width: 33.3333%;
 }
 
 .third-2 {
     max-width: 66.6666%;
+    min-width: 66.6666%;
 }
 
 .half {
     max-width: 50%;
+    min-width: 50%;
 }
 
 .pad-2 {
@@ -210,7 +236,6 @@ hr {
         padding: 0rem 2rem 0rem 2rem;
     }
     .tabs {
-        width: calc(100vw - 4rem);
         overflow: scroll;
         white-space: nowrap;
     }

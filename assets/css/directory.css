@@ -1,51 +1,50 @@
 /* START SEARCH */
 
+.sub-header {
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+    position: sticky;
+    top: 5.4rem;
+    background: var(--white);
+    z-index: 99;
+}
+
 .search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
-    margin: 0px auto 20px auto;
-    width: 100%;
+    width: calc(33.3333% - 1rem);
 }
 
 .search-form {
     display: block;
+    width: 100%;
     border: 0px;
     border-bottom: 1px solid var(--grey);
     background: none;
     font-size: 1rem;
+    opacity: .5;
     color: #495057;
-    padding: 10px 20px;
-    -webkit-transition-duration: var(--anim);
-    -o-transition-duration: var(--anim);
-    transition-duration: var(--anim);
-    width: 45%;
-    margin: 0 auto;
+    padding: 10px 0px;
+    -webkit-transition: var(--anim);
+    -o-transition: var(--anim);
+    transition: var(--anim);
 }
 
-.search-form:hover {
-    border-bottom: 1px solid #555;
-    -webkit-transition-duration: var(--anim);
-    -o-transition-duration: var(--anim);
-    transition-duration: var(--anim);
-}
-
+.search-form:hover,
 .search-form:focus {
     outline: none;
     border-bottom: 1px solid #555;
-    -webkit-transition-duration: var(--anim);
-    -o-transition-duration: var(--anim);
-    transition-duration: var(--anim);
-    width: 98%;
+    opacity: 1;
 }
 
 .search-form:focus~.clear-btn {
     opacity: 100%;
-    -webkit-transition-duration: var(--anim);
-    -o-transition-duration: var(--anim);
-    transition-duration: var(--anim);
+    -webkit-transition: var(--anim);
+    -o-transition: var(--anim);
+    transition: var(--anim);
 }
 
 
@@ -68,12 +67,11 @@
 }
 
 .card {
-    width: calc(25% - 1rem);
+    width: calc(33.33333% - 0.7rem);
     cursor: pointer;
     position: relative;
     overflow: hidden;
     background: #dddddd;
-    border-radius: var(--corners);
 }
 
 .card:after {
@@ -94,11 +92,16 @@
     position: absolute;
     bottom: 0;
     background: #000000;
-    background: linear-gradient(0deg, #000000aa 0%, #00000000 100%);
+    background: linear-gradient(0deg, #00000060 0%, #00000000 100%);
     width: 100%;
     color: white;
     padding: 1.5rem;
     transition: var(--anim);
+    opacity: 0;
+}
+
+.card:hover .card_info {
+    opacity: 1;
 }
 
 .card:hover img,
@@ -107,5 +110,91 @@
     filter: brightness(0.8);
 }
 
+#areas-btn {
+    display: none;
+}
+
 
 /* END DIRECTORY */
+
+@media screen and (max-width: 940px) {
+    .card {
+        width: calc(50% - 1rem);
+    }
+    .search {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sub-header {
+        flex-flow: row;
+        gap: 1rem;
+        align-items: self-end;
+    }
+    .tabs {
+        flex-direction: column;
+        display: contents;
+    }
+    .tabs .dropdown-container {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: -2px -2px 6px rgb(255 255 255 / 60%), -2px -2px 4px rgb(255 255 255 / 40%), 2px 2px 2px rgb(255 255 255 / 5%), 2px 2px 4px rgb(0 0 0 / 10%);
+        z-index: 1000;
+        top: 63px;
+        border-radius: var(--corners);
+    }
+    .tabs:hover .dropdown-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem;
+    }
+    .tabs:not(:hover) .dropdown-container {
+        display: none;
+        flex-direction: column;
+    }
+    .tab {
+        padding: 0.5rem 1rem;
+        border-radius: var(--corners);
+        margin: 0.2rem;
+    }
+    .tab::before,
+    .tab-active::before {
+        height: 100%;
+        z-index: -1;
+        border-radius: var(--corners);
+    }
+    .tab-active {
+        color: var(--white) !important;
+    }
+    .tab-active {
+        background: var(--active) !important;
+    }
+    .tab::before {
+        background: var(--white);
+    }
+    #areas-btn {
+        text-transform: uppercase;
+        font-weight: 400;
+        display: inline-block;
+        padding: 0.7rem 1rem;
+    }
+    #areas-btn:hover {
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+    #areas-btn:after {
+        content: "￬";
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .card {
+        width: calc(100%);
+    }
+}

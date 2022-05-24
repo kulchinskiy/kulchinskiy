@@ -1,8 +1,8 @@
 :root {
     --active: #11de93;
-    --white: #ffffff;
+    --white: #f3f3f3;
     --dark: #0c2838;
-    --grey: #888888;
+    --grey: #aaaaaa;
     --corners: 10px;
     --anim: ease-in-out .3s;
     --links: 400;
