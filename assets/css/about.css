@@ -3,10 +3,6 @@
     position: relative;
 }
 
-#about article {
-    gap: 6rem;
-}
-
 #contact {
     border-left: 1px solid var(--active);
     padding-left: 1rem;
@@ -116,9 +112,6 @@
     #about_header h2 {
         font-size: 2rem;
         line-height: 1.2;
-    }
-    #about article {
-        gap: 0;
     }
     #contact {
         background: var(--active);

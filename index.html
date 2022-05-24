@@ -13,63 +13,69 @@
 </head>
 
 <body>
-    <!-- START INDICATOR -->
-    <div id="indicator" class="dots-wrapper flex center">
-        <ul class="dots-list">
-            <a href="#landing">
-                <li class="dot-1 dot dot-ring"></li>
-            </a>
-            <a href="#portfolio">
-                <li class="dot-2 dot"></li>
-            </a>
-            <a href="#about">
-                <li class="dot-3 dot"></li>
-            </a>
-        </ul>
-        <a href="#landing" class="btn-primary" id="toTop">↑</a>
-    </div>
-    <!-- END INDICATOR -->
+    <article class="center gap-2" id="small-screen">
+        <h2>Really? 😠</h2>
+        <p>Stop playing with the window or get yourself a real screen.</p>
+        <a href="https://www.amazon.com/s?k=monitor" class="btn-primary" target="_blank">Get it here</a>
+    </article>
+    <article>
+        <!-- START INDICATOR -->
+        <div id="indicator" class="dots-wrapper flex center">
+            <ul class="dots-list">
+                <a href="#landing">
+                    <li class="dot-1 dot dot-ring"></li>
+                </a>
+                <a href="#portfolio">
+                    <li class="dot-2 dot"></li>
+                </a>
+                <a href="#about">
+                    <li class="dot-3 dot"></li>
+                </a>
+            </ul>
+            <a href="#landing" class="btn-primary" id="toTop">↑</a>
+        </div>
+        <!-- END INDICATOR -->
 
-    <header class="header">
-        <div id="logo" class="logo"></div>
+        <header class="header">
+            <div id="logo" class="logo"></div>
 
-        <!-- Desktop Menu -->
-        <nav class="menu">
-            <a class="menu1 cta" href="#landing">Home</a>
-            <a class="menu2 cta" href="#portfolio">Portfolio</a>
-            <a class="menu3 cta" href="#about">About</a>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div class="mobilemenu">
-            <nav class="mobilemenuItems" id="mobilemenuItems">
-                <div class="mobilemenuContainer">
-                    <a class="menu1" href="#landing">Home</a>
-                    <a class="menu2" href="#portfolio">Portfolio</a>
-                    <a class="menu3" href="#about">About</a>
-                </div>
+            <!-- Desktop Menu -->
+            <nav class="menu">
+                <a class="menu1 cta" href="#landing">Home</a>
+                <a class="menu2 cta" href="#portfolio">Portfolio</a>
+                <a class="menu3 cta" href="#about">About</a>
             </nav>
-            <a href="javascript:void(0);" class="icon" id="burger_icon" onclick="mobileMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15.37">
+
+            <!-- Mobile Menu -->
+            <div class="mobilemenu">
+                <nav class="mobilemenuItems" id="mobilemenuItems">
+                    <div class="mobilemenuContainer">
+                        <a class="menu1" href="#landing">Home</a>
+                        <a class="menu2" href="#portfolio">Portfolio</a>
+                        <a class="menu3" href="#about">About</a>
+                    </div>
+                </nav>
+                <a href="javascript:void(0);" class="icon" id="burger_icon" onclick="mobileMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15.37">
             <g>
               <rect class="" width="20" height="3"/>
               <rect class="" y="6.19" width="20" height="3"/>
               <rect class="" y="12.37" width="20" height="3"/>
             </g>
           </svg>
-            </a>
-        </div>
-    </header>
+                </a>
+            </div>
+        </header>
 
-    <!-- START CONTENT -->
+        <!-- START CONTENT -->
 
-    <main id="pages">
-        <div id="landing" class="page flex center fullheight container"></div>
-        <div id="portfolio" class="page bg_bright flex fullheight container"></div>
-        <hr>
-        <div id="about" class="page bg_bright flex fullheight container"></div>
-    </main>
-    <!-- END CONTENT -->
+        <main id="pages">
+            <div id="landing" class="page flex center fullheight container"></div>
+            <div id="portfolio" class="page bg_bright flex fullheight container"></div>
+            <hr>
+            <div id="about" class="page bg_bright flex fullheight container"></div>
+        </main>
+        <!-- END CONTENT -->
 </body>
 <script src="assets/js/structuralBehavior.js"></script>
 <script src="assets/js/onLoad.js"></script>

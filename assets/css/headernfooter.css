@@ -136,4 +136,7 @@
     .mobilemenu {
         display: block;
     }
+    .header {
+        padding: 2rem;
+    }
 }

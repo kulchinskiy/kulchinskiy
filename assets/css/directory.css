@@ -72,6 +72,7 @@
     position: relative;
     overflow: hidden;
     background: #dddddd;
+    border-radius: var(--corners);
 }
 
 .card:after {
@@ -114,6 +115,30 @@
     display: none;
 }
 
+.work-item #work-content {
+    align-content: flex-start;
+}
+
+.work-item #work-content .half {
+    max-width: calc(50% - .5rem);
+}
+
+.work-item #work-content p {
+    margin: 2rem 0;
+}
+
+.work-item #work-content img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--corners)
+}
+
+#technical-info {
+    position: sticky;
+    top: 10rem;
+    height: fit-content;
+}
+
 
 /* END DIRECTORY */
 
@@ -124,6 +149,9 @@
     .search {
         width: 100%;
         margin-top: 1rem;
+    }
+    .work-item {
+        flex-direction: column;
     }
 }
 
@@ -142,7 +170,7 @@
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: -2px -2px 6px rgb(255 255 255 / 60%), -2px -2px 4px rgb(255 255 255 / 40%), 2px 2px 2px rgb(255 255 255 / 5%), 2px 2px 4px rgb(0 0 0 / 10%);
+        box-shadow: var(--neumorph);
         z-index: 1000;
         top: 63px;
         border-radius: var(--corners);
@@ -191,10 +219,20 @@
         content: "￬";
         margin-left: 0.5rem;
     }
+    #technical-info {
+        position: unset;
+    }
 }
 
 @media screen and (max-width: 520px) {
     .card {
         width: calc(100%);
+    }
+    #work-content {
+        flex-direction: column;
+    }
+    .work-item #work-content .half {
+        max-width: 100%;
+        flex: 100%;
     }
 }

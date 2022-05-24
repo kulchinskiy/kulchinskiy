@@ -2,10 +2,12 @@
     --active: #11de93;
     --white: #f3f3f3;
     --dark: #0c2838;
-    --grey: #aaaaaa;
+    --grey: #777777;
     --corners: 10px;
     --anim: ease-in-out .3s;
     --links: 400;
+    --neumorph: -6px -6px 14px rgba(255, 255, 255, .7), -6px -6px 10px rgba(255, 255, 255, .5), 6px 6px 8px rgba(255, 255, 255, .075), 6px 6px 10px rgba(0, 0, 0, .15);
+    --neumorph-hover: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1);
 }
 
 .bg_bright {

@@ -57,3 +57,17 @@ function loadHtml(id, filename) {
 }
 
 // END LOAD PAGES
+
+
+function loadWorkItem(id, filename) {
+
+    let subheader = document.getElementsByClassName("sub-header");
+
+    if (subheader[0].classList.contains("invisible")) {
+        subheader[0].classList.remove("invisible");
+    } else {
+        subheader[0].classList.add("invisible");
+    }
+    loadHtml(id, filename);
+
+}

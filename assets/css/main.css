@@ -61,14 +61,17 @@ p {
 
 .gap-1 {
     column-gap: 1rem;
+    gap: 1rem;
 }
 
 .gap-2 {
     column-gap: 2rem;
+    gap: 1rem;
 }
 
 .gap-3 {
     column-gap: 3rem;
+    gap: 1rem;
 }
 
 .mb-1 {
@@ -130,52 +133,62 @@ p {
 
 .penta-1 {
     max-width: 20%;
-    min-width: 20%;
+    flex: 20%;
+    min-width: auto;
 }
 
 .penta-2 {
     max-width: 40%;
-    min-width: 40%;
+    flex: 40%;
+    min-width: auto;
 }
 
 .penta-3 {
     max-width: 60%;
-    min-width: 60%;
+    flex: 60%;
+    min-width: auto;
+    width: 100%;
 }
 
 .penta-4 {
     max-width: 80%;
-    min-width: 80%;
+    flex: 80%;
+    min-width: auto;
 }
 
 .quarter-1 {
     max-width: 25%;
-    min-width: 25%;
+    flex: 25%;
+    min-width: auto;
 }
 
 .quarter-2 {
     max-width: 50%;
-    min-width: 50%;
+    flex: 50%;
+    min-width: auto;
 }
 
 .quarter-3 {
     max-width: 75%;
-    min-width: 75%;
+    flex: 75%;
+    min-width: auto;
 }
 
 .third-1 {
     max-width: 33.3333%;
-    min-width: 33.3333%;
+    flex: 33.3333%;
+    min-width: auto;
 }
 
 .third-2 {
     max-width: 66.6666%;
-    min-width: 66.6666%;
+    flex: 66.6666%;
+    min-width: auto;
 }
 
 .half {
     max-width: 50%;
-    min-width: 50%;
+    flex: 50%;
 }
 
 .pad-2 {
@@ -200,6 +213,11 @@ p {
 
 .visible {
     display: flex !important;
+    opacity: 1 !important;
+}
+
+.invisible {
+    display: none !important;
 }
 
 ul {
@@ -222,6 +240,17 @@ hr {
     border-top: 2px dotted #ddd;
 }
 
+#small-screen {
+    color: var(--dark);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+}
+
 @media screen and (max-width: 940px) {
     body {
         overflow: scroll;
@@ -241,7 +270,21 @@ hr {
     }
     .half,
     .third-1,
-    .third-2 {
+    .third-2,
+    .penta-1,
+    .penta-2,
+    .penta-3,
+    .penta-4 {
         max-width: 100%;
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    body article:not(#small-screen) {
+        display: none;
+    }
+    #small-screen {
+        display: flex;
     }
 }

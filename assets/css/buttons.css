@@ -9,9 +9,11 @@ a {
     bottom: 2rem;
     right: 2rem;
     z-index: 100;
-    display: none;
+    opacity: 0;
     width: 50px;
     height: 50px;
+    background: var(--white);
+    transition: var(--anim);
 }
 
 #back,
@@ -19,6 +21,7 @@ a {
     position: sticky;
     top: 6rem;
     height: fit-content;
+    background: var(--white);
 }
 
 .btn-primary {
@@ -26,14 +29,15 @@ a {
     justify-content: center;
     color: var(--dark);
     border-radius: var(--corners);
-    box-shadow: -6px -6px 14px rgba(255, 255, 255, .7), -6px -6px 10px rgba(255, 255, 255, .5), 6px 6px 8px rgba(255, 255, 255, .075), 6px 6px 10px rgba(0, 0, 0, .15);
+    box-shadow: var(--neumorph);
     transition: var(--anim);
     display: flex;
+    width: fit-content;
+    padding: 0.8rem 1rem 0.7rem 1rem;
 }
 
 .btn-primary:hover {
-    filter: brightness(.95);
-    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: var(--neumorph-hover)
 }
 
 .cta {
