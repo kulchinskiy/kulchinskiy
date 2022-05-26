@@ -9,6 +9,7 @@ a {
     bottom: 2rem;
     right: 2rem;
     z-index: 100;
+    display: none;
     opacity: 0;
     width: 50px;
     height: 50px;
@@ -38,6 +39,23 @@ a {
 
 .btn-primary:hover {
     box-shadow: var(--neumorph-hover)
+}
+
+.btn-primary-d {
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: var(--corners);
+    box-shadow: var(--neumorph-d);
+    background: var(--dark);
+    transition: var(--anim);
+    display: flex;
+    width: fit-content;
+    padding: 0.8rem 1rem 0.7rem 1rem;
+}
+
+.btn-primary-d:hover {
+    box-shadow: var(--neumorph-d-hover);
 }
 
 .cta {
@@ -139,6 +157,18 @@ a {
     margin-left: .5rem;
     line-height: 0%;
     font-size: .8rem;
+}
+
+.neumorph {
+    box-shadow: var(--neumorph);
+    background: var(--white);
+    padding: 3px;
+}
+
+.neumorph-d {
+    box-shadow: var(--neumorph-d);
+    background: var(--dark);
+    padding: 3px;
 }
 
 

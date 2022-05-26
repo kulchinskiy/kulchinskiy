@@ -28,6 +28,7 @@
     min-width: 200px;
     max-width: 250px;
     fill: var(--white);
+    color: var(--white);
     transition-duration: var(--anim);
     cursor: default;
 }
@@ -64,7 +65,8 @@
 }
 
 .blinder {
-    background: var(--white);
+    background: #f3f3f3dd;
+    backdrop-filter: blur(10px);
 }
 
 
