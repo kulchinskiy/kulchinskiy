@@ -17,6 +17,17 @@ a {
     transition: var(--anim);
 }
 
+#next {
+    position: absolute;
+    bottom: 5rem;
+    right: 50%;
+    z-index: 50;
+    width: 50px;
+    height: 50px;
+    background: var(--active);
+    transition: var(--anim);
+}
+
 #back,
 #work-description {
     position: sticky;
@@ -29,7 +40,7 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--dark);
-    border-radius: var(--corners);
+    border-radius: var(--btn-corners);
     box-shadow: var(--neumorph);
     transition: var(--anim);
     display: flex;
@@ -45,7 +56,7 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--white);
-    border-radius: var(--corners);
+    border-radius: var(--btn-corners);
     box-shadow: var(--neumorph-d);
     background: var(--dark);
     transition: var(--anim);
@@ -56,6 +67,7 @@ a {
 
 .btn-primary-d:hover {
     box-shadow: var(--neumorph-d-hover);
+    opacity: .8;
 }
 
 .cta {

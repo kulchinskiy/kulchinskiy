@@ -7,15 +7,8 @@
     z-index: -10;
 }
 
-#landing p {
-    max-width: 650px;
-}
-
-#landing {
-    background-color: var(--white);
-    /* background-image: radial-gradient(#39505d 0.75px, transparent 0.75px), radial-gradient(#39505d 0.75px, #0c2838 0.75px); */
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px;
+.description {
+    width: 60%;
 }
 
 .mb-3 {
@@ -34,7 +27,7 @@
 .typeText,
 .textAbove,
 #landing p {
-    color: #ffffff;
+    color: #bcd6de;
 }
 
 .typeText::after {
@@ -129,6 +122,9 @@
     #profile_sm {
         display: block;
     }
+    .description {
+        width: 85%;
+    }
 }
 
 
@@ -141,54 +137,45 @@
 
 /*waves****************************/
 
-.page-active>.box {
-    display: block !important;
+#landing {
+    background-color: var(--dark);
+    /* background-image: radial-gradient(#39505d 0.75px, transparent 0.75px), radial-gradient(#39505d 0.75px, #0c2838 0.75px); */
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
 }
 
 #landing .box {
     position: absolute;
-    top: -160%;
-    left: 80%;
-    transform: rotate(80deg);
-    display: none;
+    bottom: -160px;
+    right: -1530px;
+    transform: rotate(100deg);
 }
 
 .wave {
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
-    opacity: .8;
-    width: 2200px;
-    height: 2000px;
-    transform-origin: 50% 48%;
+    height: 4000px;
+    width: 4000px;
     border-radius: 43%;
-    animation: drift 60s infinite linear;
-    background: var(--dark);
-}
-
-.wave.-three {
-    animation: drift 45s infinite linear;
-    position: absolute;
-}
-
-.wave.-two {
     animation: drift 25s infinite linear;
-    position: absolute;
+    background: var(--white);
 }
 
 .wave.-one {
-    box-shadow: var(--neumorph);
+    opacity: .3;
 }
 
-.box:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    transform: translate3d(0, 0, 0);
+.wave.-two {
+    animation: drift 28s infinite linear;
+    position: absolute;
+    opacity: .3;
+    scale: 20;
+}
+
+.wave.-three {
+    animation: drift 30s infinite linear;
+    position: absolute;
 }
 
 @keyframes drift {

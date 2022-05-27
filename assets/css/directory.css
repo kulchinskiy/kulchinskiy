@@ -72,7 +72,7 @@
     position: relative;
     overflow: hidden;
     background: #dddddd;
-    border-radius: var(--corners);
+    border-radius: var(--int-corners);
 }
 
 .card:after {
@@ -173,7 +173,7 @@
         box-shadow: var(--neumorph);
         z-index: 1000;
         top: 63px;
-        border-radius: var(--corners);
+        border-radius: var(--btn-corners);
     }
     .tabs:hover .dropdown-container {
         display: flex;
@@ -187,14 +187,14 @@
     }
     .tab {
         padding: 0.5rem 1rem;
-        border-radius: var(--corners);
+        border-radius: var(--btn-corners);
         margin: 0.2rem;
     }
     .tab::before,
     .tab-active::before {
         height: 100%;
         z-index: -1;
-        border-radius: var(--corners);
+        border-radius: var(--btn-corners);
     }
     .tab-active {
         color: var(--white) !important;

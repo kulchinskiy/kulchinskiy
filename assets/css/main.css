@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -21,7 +22,6 @@ body {
     margin: 0;
     padding: 0;
     color: var(--white);
-    /* overflow: hidden; */
 }
 
 p {
@@ -110,6 +110,7 @@ p {
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
     align-items: center!important;
+    align-content: center;
 }
 
 .bottom {
@@ -251,6 +252,10 @@ hr {
     text-align: center;
 }
 
+.mobile {
+    display: none;
+}
+
 @media screen and (max-width: 940px) {
     body {
         overflow: scroll;
@@ -260,6 +265,9 @@ hr {
     }
     .container {
         padding: 6rem 0rem 0rem 0rem;
+    }
+    #landing.container {
+        padding: 0rem 0rem 0rem 0rem;
     }
     .content {
         padding: 0rem 2rem 0rem 2rem;
@@ -277,6 +285,22 @@ hr {
     .penta-4 {
         max-width: 100%;
         flex: 100%;
+    }
+    .box {
+        display: none;
+    }
+    #next {
+        bottom: 2rem !important;
+        left: 2rem !important;
+    }
+    #landing .content {
+        align-self: center;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
     }
 }
 

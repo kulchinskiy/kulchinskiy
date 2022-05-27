@@ -12,10 +12,6 @@
     font-weight: 600;
 }
 
-#logo.landing:after {
-    content: "Kulchinskiy.";
-}
-
 #logo.portfolio:after {
     content: "My work.";
 }
@@ -48,7 +44,6 @@
     justify-content: space-between;
     padding: 2rem 4rem;
     background: #ffffff00;
-    transition: var(--anim);
 }
 
 .menu {
@@ -65,8 +60,7 @@
 }
 
 .blinder {
-    background: #f3f3f3dd;
-    backdrop-filter: blur(10px);
+    background: var(--white);
 }
 
 
@@ -128,7 +122,7 @@
 .mobilemenuContainer {
     padding: 80px 40px;
     height: 100vh;
-    min-width: 101vw
+    min-width: 375px;
 }
 
 @media screen and (max-width: 940px) {

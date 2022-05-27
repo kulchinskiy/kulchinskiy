@@ -51,9 +51,16 @@ p {
     font-weight: 500;
 }
 
+@media screen and (max-width: 1250px) {
+    h1 {
+        font-size: 4.2rem;
+    }
+}
+
 @media screen and (max-width: 940px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
+        font-weight: 400;
     }
     h2 {
         font-size: 2rem;
