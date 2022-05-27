@@ -2,8 +2,7 @@
     --active-old: #11de93;
     --active: #9582db;
     --white: #f3f3f3;
-    --dark: #171519;
-    --dark-old: #0c2838;
+    --dark: #0c2838;
     --grey: #777777;
     --int-corners: 0px;
     --btn-corners: 30px;
@@ -11,9 +10,9 @@
     --links: 400;
     --neumorph: -6px -6px 14px #ffffffb3, -6px -6px 10px #ffffff80, 6px 6px 8px hsla(0, 0%, 100%, 0.075), 6px 6px 10px #00000026;
     --neumorph-hover: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px rgba(0, 0, 0, .1);
-    --neumorph-d: -6px -6px 14px #161616b3, -6px -6px 10px #0f314752, 6px 6px 8px #0b0a0e85, 6px 6px 10px #1211149a;
+    --neumorph-d: -6px -6px 14px #16161655, -6px -6px 10px #0f314752, 6px 6px 8px #0b0a0e4d, 6px 6px 10px #12111450;
     --neumorph-d-old: -6px -6px 14px #0f3247b3, -6px -6px 10px #0f314752, 6px 6px 8px #091e2985, 6px 6px 10px #091e299a;
-    --neumorph-d-hover: -2px -2px 6px #161616b3, -2px -2px 4px #0f314752, 6px 6px 8px #0b0a0e85, 2px 2px 2px #1211149a;
+    --neumorph-d-hover: -2px -2px 6px #16161659, -2px -2px 4px #0f314752, 6px 6px 8px #0b0a0e61, 2px 2px 2px #12111471;
     --neumorph-d-hover-old: -2px -2px 6px #0f3247b3, -2px -2px 4px #0f314752, 6px 6px 8px #091e2985, 2px 2px 2px #091e299a;
 }
 

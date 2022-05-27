@@ -6,6 +6,7 @@
     font-size: 1rem;
     letter-spacing: 8px;
     font-weight: 600;
+    padding-top: 5px;
 }
 
 #logo:after {

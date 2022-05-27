@@ -138,7 +138,7 @@
 /*waves****************************/
 
 #landing {
-    background-color: var(--dark);
+    background-color: var(--white);
     /* background-image: radial-gradient(#39505d 0.75px, transparent 0.75px), radial-gradient(#39505d 0.75px, #0c2838 0.75px); */
     background-size: 30px 30px;
     background-position: 0 0, 15px 15px;
@@ -146,8 +146,8 @@
 
 #landing .box {
     position: absolute;
-    bottom: -160px;
-    right: -1530px;
+    top: -2900px;
+    right: -1200px;
     transform: rotate(100deg);
 }
 
@@ -159,23 +159,25 @@
     width: 4000px;
     border-radius: 43%;
     animation: drift 25s infinite linear;
-    background: var(--white);
 }
 
 .wave.-one {
     opacity: .3;
+    border: 1px solid var(--active);
 }
 
 .wave.-two {
-    animation: drift 28s infinite linear;
+    animation: drift 30s infinite linear;
     position: absolute;
     opacity: .3;
+    border: 1px solid var(--active);
     scale: 20;
 }
 
 .wave.-three {
-    animation: drift 30s infinite linear;
+    animation: drift 40s infinite linear;
     position: absolute;
+    background: var(--dark);
 }
 
 @keyframes drift {

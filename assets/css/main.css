@@ -266,6 +266,9 @@ hr {
     .container {
         padding: 6rem 0rem 0rem 0rem;
     }
+    #landing {
+        background: var(--dark) !important;
+    }
     #landing.container {
         padding: 0rem 0rem 0rem 0rem;
     }
@@ -292,6 +295,8 @@ hr {
     #next {
         bottom: 2rem !important;
         left: 2rem !important;
+        box-shadow: var(--neumorph-d) !important;
+        background: var(--active) !important;
     }
     #landing .content {
         align-self: center;
