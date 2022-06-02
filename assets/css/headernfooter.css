@@ -10,7 +10,7 @@
 }
 
 #logo:after {
-    content: "";
+    content: "Kulchinskiy.";
     font-weight: 600;
 }
 
@@ -44,7 +44,7 @@
     /* border: 1px solid #ffffff40; */
     color: var(--white);
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     background: #ffffff00;
 }
 
@@ -54,7 +54,6 @@
 
 .menu a {
     text-transform: uppercase;
-    margin: 0rem .7rem;
     color: inherit;
     font-size: .9rem;
     transition: var(--anim);
@@ -63,78 +62,4 @@
 
 .blinder {
     background: var(--white);
-}
-
-
-/* MOBILE MENU */
-
-#burger_icon rect {
-    fill: var(--active);
-    transition: var(--anim);
-}
-
-#burger_icon:hover rect,
-#burger_icon:focus rect,
-#burger_icon:active rect {
-    opacity: .8;
-}
-
-.mobilemenu {
-    background-color: #ffffffee;
-    position: absolute;
-    right: 0;
-    top: 0vh;
-    display: none;
-    backdrop-filter: blur(5px);
-    transition-duration: var(--anim);
-}
-
-.mobilemenu #mobilemenuItems {
-    display: none;
-}
-
-.mobilemenu .mobilemenuItems a {
-    color: var(--dark);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    transition: var(--anim);
-}
-
-.mobilemenu .mobilemenuItems a:hover,
-.mobilemenu .mobilemenuItems a:focus,
-.mobilemenu .mobilemenuItems a:active {
-    color: var(--active);
-}
-
-.mobilemenu .icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 1.9rem;
-}
-
-.mobilemenu svg {
-    width: 20px;
-    height: 20px;
-}
-
-.mobilemenuContainer {
-    padding: 80px 40px;
-    height: 100vh;
-    min-width: 375px;
-}
-
-@media screen and (max-width: 940px) {
-    .menu {
-        display: none;
-    }
-    .mobilemenu {
-        display: block;
-    }
-    .header {
-        padding: 2rem;
-    }
 }

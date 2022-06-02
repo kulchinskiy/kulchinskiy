@@ -15,12 +15,10 @@
     display: flex;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
-    width: calc(33.3333% - 1rem);
 }
 
 .search-form {
     display: block;
-    width: 100%;
     border: 0px;
     border-bottom: 1px solid var(--grey);
     background: none;
@@ -31,13 +29,19 @@
     -webkit-transition: var(--anim);
     -o-transition: var(--anim);
     transition: var(--anim);
+    width: calc(33% - .2rem);
 }
 
-.search-form:hover,
-.search-form:focus {
+.search-form:hover {
     outline: none;
     border-bottom: 1px solid #555;
     opacity: 1;
+}
+
+.search-form:focus {
+    width: 100%;
+    border-bottom: 1px solid #555;
+    outline: none;
 }
 
 .search-form:focus~.clear-btn {
@@ -63,11 +67,11 @@
     -webkit-box-pack: left;
     -ms-flex-pack: left;
     justify-content: left;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .card {
-    width: calc(33.33333% - 0.7rem);
+    width: calc(33.33333% - 0.4rem);
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -144,11 +148,11 @@
 
 @media screen and (max-width: 940px) {
     .card {
-        width: calc(50% - 1rem);
+        width: calc(50% - .3rem);
     }
-    .search {
-        width: 100%;
-        margin-top: 1rem;
+    .search,
+    .search-form {
+        width: calc(100%) !important;
     }
     .work-item {
         flex-direction: column;

@@ -55,7 +55,7 @@ a {
 .btn-primary-d {
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--bright);
     border-radius: var(--btn-corners);
     box-shadow: var(--neumorph-d);
     background: var(--dark);
@@ -174,13 +174,23 @@ a {
 .neumorph {
     box-shadow: var(--neumorph);
     background: var(--white);
-    padding: 3px;
 }
 
 .neumorph-d {
     box-shadow: var(--neumorph-d);
     background: var(--dark);
-    padding: 3px;
+}
+
+i {
+    color: var(--bright);
+    transition: .3s;
+    padding: .7rem;
+    border-radius: var(--btn-corners);
+}
+
+a i:hover {
+    opacity: .8;
+    background-color: #00000030;
 }
 
 

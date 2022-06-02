@@ -19,7 +19,7 @@
 .dots-list {
     position: absolute;
     right: 0;
-    margin-right: 10px;
+    margin-right: 1.5rem;
 }
 
 .dot {
@@ -36,20 +36,6 @@
     border: solid 2px var(--active);
     width: 13px;
     height: 13px;
-    /* animation: bounce 0.5s 1; */
-    animation-direction: forwards;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translatex(-5px);
-    }
-}
-
-@media screen and (max-width: 940px) {
-    #indicator {
-        display: none !important;
-    }
 }
 
 

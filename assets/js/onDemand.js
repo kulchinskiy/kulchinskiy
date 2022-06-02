@@ -63,10 +63,10 @@ function loadWorkItem(id, filename) {
 
     let subheader = document.getElementsByClassName("sub-header");
 
-    if (subheader[0].classList.contains("invisible")) {
-        subheader[0].classList.remove("invisible");
+    if (subheader[0].classList.contains("hidden")) {
+        subheader[0].classList.remove("hidden");
     } else {
-        subheader[0].classList.add("invisible");
+        subheader[0].classList.add("hidden");
     }
     loadHtml(id, filename);
 

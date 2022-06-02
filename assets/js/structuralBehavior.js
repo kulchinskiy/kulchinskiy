@@ -112,7 +112,7 @@ document.addEventListener('scroll', function() {
         dot3.classList.add('dots-active');
         menu3.classList.add('active');
         logoHolder.classList.add('about');
-        // page3.classList.add('page-active');
+        page3.classList.add('page-active');
 
         // FEATURES
         header.classList.add('blinder');

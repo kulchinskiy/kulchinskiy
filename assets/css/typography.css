@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 300;
 }
 
@@ -45,24 +45,5 @@ h5 {
 
 p {
     line-height: 1.4;
-}
-
-.bold {
-    font-weight: 500;
-}
-
-@media screen and (max-width: 940px) {
-    h1 {
-        font-size: 2.4rem;
-        font-weight: 600;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    h1 {
-        font-size: 2rem;
-    }
+    margin: 0;
 }
