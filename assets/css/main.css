@@ -51,6 +51,10 @@ body {
     flex-direction: column-reverse;
 }
 
+.space-around {
+    place-content: space-around;
+}
+
 .gap {
     place-content: space-between;
 }
@@ -225,7 +229,7 @@ ul:before {
 }
 
 hr {
-    width: 30%;
+    max-width: 20rem;
     border-style: none;
     border-top: 2px dotted #ddd;
 }

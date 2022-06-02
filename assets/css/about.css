@@ -26,19 +26,19 @@
     margin-top: .5rem;
 }
 
-.expanded div:after {
-    content: "See resumed profile" !important;
-}
-
-.expanded div {
-    background-color: transparent !important;
-    color: var(--active);
-}
-
-.reveal div:after {
-    content: "See full profile";
-}
-
 .info_header {
     margin-bottom: 2rem;
+}
+
+#featured img {
+    filter: grayscale(1);
+    opacity: .4;
+    width: 120px;
+    transition: var(--anim);
+}
+
+#featured img:hover,
+#featured img:focus {
+    opacity: 1;
+    filter: grayscale(0);
 }

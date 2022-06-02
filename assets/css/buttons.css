@@ -17,15 +17,45 @@ a {
     transition: var(--anim);
 }
 
-#next {
-    position: absolute;
-    bottom: 2rem;
-    right: 50%;
-    z-index: 50;
+.reveal div:after {
+    content: "See more";
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+.reveal div:hover:before {
+    box-shadow: var(--neumorph-hover);
+}
+
+.reveal div:before {
+    content: "↑";
+    transform: rotate( 180deg);
+    display: flex;
+    box-shadow: var(--neumorph);
+    border-radius: var(--btn-corners);
     width: 50px;
     height: 50px;
+    place-content: center;
+    place-items: center;
+    margin-top: 1rem;
     transition: var(--anim);
-    background-color: var(--active);
+}
+
+.expanded div:after {
+    content: "See less" !important;
+}
+
+.expanded div:before {
+    transform: rotate(0deg);
+}
+
+.reveal.expanded {
+    position: sticky;
+    top: 2rem;
+    z-index: 100;
+    background: var(--white);
 }
 
 #back,
