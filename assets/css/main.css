@@ -248,3 +248,10 @@ hr {
 .hidden {
     display: none;
 }
+
+footer {
+    position: relative;
+    bottom: 2.5rem;
+    color: var(--grey);
+    font-size: .8rem;
+}

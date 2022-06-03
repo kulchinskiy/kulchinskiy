@@ -17,52 +17,27 @@ a {
     transition: var(--anim);
 }
 
-.reveal div:after {
-    content: "See more";
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: var(--grey);
-}
-
-.reveal div:hover:before {
-    box-shadow: var(--neumorph-hover);
-}
-
-.reveal div:before {
-    content: "↑";
-    transform: rotate( 180deg);
-    display: flex;
-    box-shadow: var(--neumorph);
-    border-radius: var(--btn-corners);
-    width: 50px;
-    height: 50px;
-    place-content: center;
-    place-items: center;
-    margin-top: 1rem;
+.reveal #more:after {
+    content: "See full profile";
     transition: var(--anim);
+    color: var(--grey);
+    font-weight: 400;
 }
 
-.expanded div:after {
-    content: "See less" !important;
-}
-
-.expanded div:before {
-    transform: rotate(0deg);
+.expanded #more:after {
+    content: "See full profile";
 }
 
 .reveal.expanded {
     position: sticky;
-    top: 2rem;
+    top: .4rem;
     z-index: 100;
-    background: var(--white);
 }
 
 #back,
 #work-description {
     position: sticky;
     top: 6rem;
-    height: fit-content;
     background: var(--white);
 }
 
@@ -75,7 +50,11 @@ a {
     transition: var(--anim);
     display: flex;
     width: fit-content;
-    padding: 0.8rem 1rem 0.7rem 1rem;
+    font-weight: 500;
+    padding: 0.7rem 1.3rem 0.5rem 1.3rem;
+    font-weight: 500;
+    height: 50px;
+    font-size: .9rem;
 }
 
 .btn-primary:hover {
@@ -118,9 +97,20 @@ a {
     opacity: .7;
 }
 
-.tabs .dropdown-container {
+.tabs {
+    box-shadow: var(--neumorph-inv);
+    width: fit-content;
     display: flex;
-    gap: 1rem;
+    border-radius: var(--btn-corners);
+    padding: .3rem;
+}
+
+.tab:first-child {
+    border-radius: 25px 5px 5px 25px;
+}
+
+.tab:last-child {
+    border-radius: 5px 25px 25px 5px;
 }
 
 .tab {
@@ -129,16 +119,23 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     color: var(--grey);
-    opacity: .5;
+    border-radius: 5px;
+    padding: .2rem 1rem;
 }
 
-.tab:hover,
-.tab:focus {
-    opacity: 1;
+.tab:hover {
+    background: #ececec;
+    color: var(--dark);
 }
 
-.cta::before,
-.tab::before {
+.tab-active {
+    background: var(--active) !important;
+    color: var(--white) !important;
+    cursor: default;
+    font-weight: 600;
+}
+
+.cta::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -156,42 +153,23 @@ a {
     display: none;
 }
 
-.tab::before {
-    background-color: var(--grey);
-}
-
 @media (hover: hover) and (pointer: fine) {
     .cta:hover::before,
-    .cta:focus::before,
-    .tab:hover::before,
-    .tab:focus::before {
+    .cta:focus::before {
         left: 0;
         right: auto;
         width: 100%;
     }
 }
 
-.tab-active,
 .active {
     color: var(--active) !important;
     fill: var(--active) !important;
 }
 
-.tab.tab-active,
 .cta.active {
     cursor: default;
     opacity: 1 !important;
-}
-
-.tab-active::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--active);
 }
 
 .arrow:after {
@@ -199,6 +177,19 @@ a {
     margin-left: .5rem;
     line-height: 0%;
     font-size: .8rem;
+}
+
+#back {
+    color: var(--grey);
+}
+
+#back:before {
+    /* content: "‹"; */
+    content: "←";
+    margin-right: .5rem;
+    margin-top: 0.25rem;
+    line-height: 0%;
+    font-size: 1rem;
 }
 
 .neumorph {
@@ -222,48 +213,3 @@ a i:hover {
     opacity: .8;
     background-color: #00000030;
 }
-
-
-/*
-
-
-
-.active {
-    color: var(--active) !important;
-    fill: var(--active) !important;
-    cursor: default;
-}
-
-.tab-active {
-    background: var(--active);
-    cursor: default;
-}
-
-.tabs {
-    display: flex;
-    margin-bottom: 2rem;
-}
-
-.tabs :first-child {
-    border-radius: 5px 0px 0px 5px;
-    border-left: 1px solid var(--active);
-}
-
-.tabs :last-child {
-    border-radius: 0px 5px 5px 0px;
-    border-right: 1px solid var(--active);
-}
-
-.tab {
-    border-top: 1px solid var(--active);
-    border-bottom: 1px solid var(--active);
-    padding: 0.4rem 1rem;
-}
-
-.btn-primary {
-    background-color: var(--active);
-    color: var(--dark);
-    padding: 0.5rem 2rem;
-    border-radius: 20px;
-    border: 1px solid;
-} */

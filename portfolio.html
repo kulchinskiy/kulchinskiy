@@ -1,16 +1,12 @@
 <div id="master" class="content fullwidth">
     <div class="sub-header h-center">
-        <div class='tabs'>
-            <p id="areas-btn" class="btn-primary">CHOOSE AREA</p>
-            <div class="dropdown-container text-center">
-                <a href="#portfolio" id="linkid" class="tab tab-active" onclick='loadHtml("template","template0.html")'>UX &     UI</a>
-                <a href="#portfolio" class="tab" onclick='loadHtml("template","template1.html")'>Branding & Identity</a>
-                <a href="#portfolio" class="tab" onclick='loadHtml("template","template2.html")'>Motion & Video</a>
-                <a href="#portfolio" class="tab" onclick='loadHtml("template","template3.html")'>Visual Design</a>
-            </div>
-        </div>
-        <div class="search mt-2 h-center">
-            <input type="text" id="search-item" class="search-form h-center" onkeyup="searchFilter()" placeholder="Search" aria-describedby="button-addon2" />
+        <div class='tabs h-center'>
+            <a href="#portfolio" class="tab tab-active" onclick='loadHtml("template","template0.html")'>UX & UI</a>
+            <a href="#portfolio" class="tab" onclick='loadHtml("template","template1.html")'>Branding</a>
+            <a href="#portfolio" class="tab" onclick='loadHtml("template","template2.html")'>Motion & Video</a>
+            <a href="#portfolio" class="tab" onclick='loadHtml("template","template3.html")'>Visual Design</a>
+            <p style="margin: 0 .4rem 0rem .2rem; color: #ccc;">|</p>
+            <input type="text" id="search-item" class="search-form" onkeyup="searchFilter()" placeholder="Search..." aria-describedby="button-addon2" />
         </div>
     </div>
 
