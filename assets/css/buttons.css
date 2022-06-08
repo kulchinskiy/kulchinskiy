@@ -18,10 +18,9 @@ a {
 }
 
 #below-btn {
+    text-align: center;
     width: 50px;
     height: 50px;
-    text-align: center;
-    background: var(--active);
 }
 
 .reveal #more:after {
@@ -110,10 +109,6 @@ a {
 
 .tab:first-child {
     border-radius: 25px 5px 5px 25px;
-}
-
-.tab:last-child {
-    border-radius: 5px 25px 25px 5px;
 }
 
 .tab {

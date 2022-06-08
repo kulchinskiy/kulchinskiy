@@ -1,10 +1,10 @@
 // START BURGER MENU
 function mobileMenu() {
-    var x = document.getElementById("mobilemenuItems");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var mmenu = document.getElementById("mobilemenu");
+    if (mmenu.style.right === "0px") {
+        mmenu.style.right = "-105%";
     } else {
-        x.style.display = "block";
+        mmenu.style.right = "0px";
     }
 }
 // END BURGER MENU

@@ -6,7 +6,6 @@
     font-size: 1rem;
     letter-spacing: 8px;
     font-weight: 600;
-    padding-top: 5px;
 }
 
 #logo:after {
@@ -47,6 +46,7 @@
     padding: 1.5rem 2rem;
     background: #ffffff00;
     max-width: 100vw;
+    transition: var(--anim);
 }
 
 .menu {
