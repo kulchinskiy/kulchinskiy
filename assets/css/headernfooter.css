@@ -44,8 +44,9 @@
     /* border: 1px solid #ffffff40; */
     color: var(--white);
     justify-content: space-between;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     background: #ffffff00;
+    max-width: 100vw;
 }
 
 .menu {
@@ -61,5 +62,6 @@
 }
 
 .blinder {
-    background: var(--white);
+    background: #f7f7f7dd;
+    backdrop-filter: blur(10px);
 }

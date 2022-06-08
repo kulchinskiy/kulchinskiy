@@ -3,20 +3,9 @@
 .sub-header {
     justify-content: space-between;
     padding: 0.5rem 0rem;
-    position: sticky;
-    top: 1.2rem;
-    z-index: 199;
 }
 
-.search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
-}
-
-.search-form {
+#search-item {
     display: block;
     outline: none;
     border: 0px;
@@ -30,12 +19,12 @@
     transition: var(--anim);
 }
 
-.search-form:hover {
+#search-item:hover {
     outline: none;
     opacity: 1;
 }
 
-.search-form:focus {
+#search-item:focus {
     width: 200px;
 }
 
@@ -103,10 +92,6 @@
     filter: brightness(0.8);
 }
 
-#areas-btn {
-    display: none;
-}
-
 .work-item #work-content {
     align-content: flex-start;
 }
@@ -134,97 +119,26 @@
 
 /* END DIRECTORY */
 
-@media screen and (max-width: 940px) {
-    .card {
-        width: calc(50% - .3rem);
-    }
-    .search,
-    .search-form {
-        width: calc(100%) !important;
-    }
-    .work-item {
-        flex-direction: column;
-    }
+
+/*hide the inputs/checkmarks and submenu*/
+
+input,
+ul.dropdown-list {
+    display: none;
 }
 
-@media screen and (max-width: 600px) {
-    .sub-header {
-        flex-flow: row;
-        gap: 1rem;
-        align-items: self-end;
-    }
-    .tabs {
-        flex-direction: column;
-        display: contents;
-    }
-    .tabs .dropdown-container {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: var(--neumorph);
-        z-index: 1000;
-        top: 63px;
-        border-radius: var(--btn-corners);
-    }
-    .tabs:hover .dropdown-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        padding: 0.5rem;
-    }
-    .tabs:not(:hover) .dropdown-container {
-        display: none;
-        flex-direction: column;
-    }
-    .tab {
-        padding: 0.5rem 1rem;
-        border-radius: var(--btn-corners);
-        margin: 0.2rem;
-    }
-    .tab::before,
-    .tab-active::before {
-        height: 100%;
-        z-index: -1;
-        border-radius: var(--btn-corners);
-    }
-    .tab-active {
-        color: var(--white) !important;
-    }
-    .tab-active {
-        background: var(--active) !important;
-    }
-    .tab::before {
-        background: var(--white);
-    }
-    #areas-btn {
-        text-transform: uppercase;
-        font-weight: 400;
-        display: inline-block;
-        padding: 0.7rem 1rem;
-    }
-    #areas-btn:hover {
-        border-bottom-left-radius: 0px !important;
-        border-bottom-right-radius: 0px !important;
-    }
-    #areas-btn:after {
-        content: "￬";
-        margin-left: 0.5rem;
-    }
-    #technical-info {
-        position: unset;
-    }
+
+/*position the label*/
+
+label {
+    position: relative;
+    display: block;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 520px) {
-    .card {
-        width: calc(100%);
-    }
-    #work-content {
-        flex-direction: column;
-    }
-    .work-item #work-content .half {
-        max-width: 100%;
-        flex: 100%;
-    }
+
+/*show the submenu when input is checked*/
+
+input:checked~ul.dropdown-list {
+    display: flex;
 }

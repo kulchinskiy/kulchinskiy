@@ -2,19 +2,18 @@
     min-height: 450px;
 }
 
+#main {
+    z-index: 99;
+}
+
 #hero {
     max-width: 1000px;
-    z-index: 10;
 }
 
 .typeText,
 .textAbove,
 #landing p {
     color: var(--bright);
-}
-
-.typeText {
-    white-space: nowrap;
 }
 
 .typeText::after {

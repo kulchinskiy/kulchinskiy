@@ -17,6 +17,13 @@ a {
     transition: var(--anim);
 }
 
+#below-btn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: var(--active);
+}
+
 .reveal #more:after {
     content: "See full profile";
     transition: var(--anim);
@@ -25,13 +32,7 @@ a {
 }
 
 .expanded #more:after {
-    content: "See full profile";
-}
-
-.reveal.expanded {
-    position: sticky;
-    top: .4rem;
-    z-index: 100;
+    content: "See resumed profile";
 }
 
 #back,
@@ -97,12 +98,14 @@ a {
     opacity: .7;
 }
 
-.tabs {
+.tabs-holder {
     box-shadow: var(--neumorph-inv);
     width: fit-content;
     display: flex;
     border-radius: var(--btn-corners);
-    padding: .3rem;
+    padding: .5rem;
+    margin: 0 auto;
+    place-items: center;
 }
 
 .tab:first-child {
@@ -212,4 +215,36 @@ i {
 a i:hover {
     opacity: .8;
     background-color: #00000030;
+}
+
+label[for="mtabs"] {
+    box-shadow: var(--neumorph);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: var(--btn-corners);
+}
+
+label[for="mtabs"]:hover {
+    box-shadow: var(--neumorph-hover);
+}
+
+.dropdown-list {
+    position: absolute;
+    z-index: 99;
+    background: var(--white);
+    margin-top: 5rem;
+    flex-direction: column;
+    box-shadow: var(--neumorph);
+    padding-inline-end: 0px;
+}
+
+.dropdown-list li {
+    padding: .1rem;
+}
+
+.dropdown-list a {
+    padding: .5rem;
 }

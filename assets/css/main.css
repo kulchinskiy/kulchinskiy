@@ -22,6 +22,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--bright);
+    max-width: 100vw;
 }
 
 .container {
@@ -29,11 +30,7 @@ body {
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 6rem 0rem 4rem 0rem;
-}
-
-.content {
-    padding: 0rem 8rem 0rem 8rem;
+    padding: 5rem 8rem 4rem 8rem;
 }
 
 .nowrap {
@@ -119,6 +116,7 @@ body {
     -ms-flex-align: center!important;
     align-items: center!important;
     align-content: center;
+    align-self: center;
 }
 
 .h-center {
@@ -212,6 +210,10 @@ body {
 .visible {
     display: flex !important;
     opacity: 1 !important;
+}
+
+.responsive {
+    display: none !important;
 }
 
 ul {
