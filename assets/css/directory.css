@@ -80,6 +80,7 @@
     padding: 1.5rem;
     transition: var(--anim);
     opacity: 0;
+    line-height: 1.6;
 }
 
 .card:hover .card_info {

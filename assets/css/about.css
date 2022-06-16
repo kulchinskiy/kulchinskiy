@@ -2,12 +2,6 @@
     display: grid;
 }
 
-.info_header p:before {
-    content: "— ";
-    color: var(--active);
-    margin: 0;
-}
-
 .info_data p {
     display: grid;
 }
