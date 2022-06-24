@@ -1,0 +1,64 @@
+/* MOBILE MENU */
+
+#burger_icon rect {
+    fill: var(--active);
+    transition: var(--anim);
+}
+
+#burger_icon:hover rect,
+#burger_icon:focus rect,
+#burger_icon:active rect {
+    opacity: .8;
+}
+
+.burger {
+    display: none;
+}
+
+.mobilemenu {
+    background-color: #ffffff;
+    position: absolute;
+    right: -105%;
+    top: 0vh;
+    transition-duration: .5s;
+    box-shadow: 0 0 10px #00000033;
+    padding: 80px 40px;
+    height: 100vh;
+    min-width: 320px;
+}
+
+.burger .mobilemenu a {
+    color: var(--dark);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    transition: var(--anim);
+}
+
+.burger .mobilemenu a:hover,
+.burger .mobilemenu a:focus,
+.burger .mobilemenu a:active {
+    color: var(--active);
+}
+
+.burger .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.5rem;
+}
+
+.burger svg {
+    width: 15px;
+    height: 15px;
+}
+
+.mfooter a {
+    color: var(--grey);
+}
+
+.mfooter p {
+    color: var(--active);
+    padding: 14px 0px;
+}
